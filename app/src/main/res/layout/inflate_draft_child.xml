@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/rectangle_grey">
+
+        <code.common.RoundedImageView
+            android:visibility="visible"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/ivPic"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_delete"
+            android:tint="@color/red"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textColor="@color/blackNew"
+            android:paddingLeft="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_toRightOf="@+id/ivPic"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_2sdp"/>
+
+        <TextView
+            android:id="@+id/tvHRN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="@dimen/_6sdp"
+            android:singleLine="true"
+            android:textColor="@color/blackNew"
+            android:paddingLeft="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/tvName"
+            android:layout_toRightOf="@+id/ivPic"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_2sdp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

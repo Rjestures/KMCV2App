@@ -1,0 +1,450 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:elevation="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_white_round"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vitalSigns"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/blackNew"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvTemperatureResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvRespiRateResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/respiratoryCount"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPulseResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pulseRate"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvSpO2Result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spo2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvCftResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isCrt3"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generalExamination"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/blackNew"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvAlertResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alertness"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvToneResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvColorResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/color"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/respiratoryAssessment"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/blackNew"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvApneaResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apnea"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvGruntingResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grunting"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvChestResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chestIndrawing"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedingAssessment"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/blackNew"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvInterestResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interestInFeedingMandResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvLactationResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interestInFeedingMandResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvSuckingResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suckingMandResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miscellaneous"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/blackNew"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvUmbilicusResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/umbilicusResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvSkinResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skinNew"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvBulgingResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bulgingAnteriorFontanelleMandResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvBleedingResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bulgingAnteriorFontanelleMandResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvUrineResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skin"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvStoolResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bulgingAnteriorFontanelleMandResult"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="@color/blackNew"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlOk"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/rectangle_teal_round"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tvOk"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvOk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/_3sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

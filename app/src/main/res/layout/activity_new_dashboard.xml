@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage"
+    tools:context="code.newDashboard.NewDashboardActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/inflate_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tvScoreBoard"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_teal_round_new"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/scoreBoard"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvFacilityReview"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/facilityOverView"
+            android:textColor="@color/blackNew"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvKmcPerformance"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/kmcPerformance"
+            android:textColor="@color/blackNew"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvUpkeepKmc"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/upKeepOfKmcLounge"
+            android:textColor="@color/blackNew"
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+
+
+</LinearLayout>

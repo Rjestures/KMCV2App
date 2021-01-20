@@ -1,0 +1,1517 @@
+<resources>
+    <string name="app_name" translatable="false">KMC V2</string>
+    <string name="version">Version -</string>
+    <string name="databaseName" translatable="false">kmc</string>
+    <string name="pleaseWait">Please Wait…</string>
+    <string name="errorInternet">Please check your internet connection</string>
+    <string name="password">Password</string>
+    <string name="shareReportText">Check the Report</string>
+
+    <string name="selectLounge">Select Lounge</string>
+    <string name="errorselectLounge">Please select your lounge</string>
+    <string name="selectDistrict">Select District </string>
+    <string name="errorselectDistrict">Please select your district</string>
+    <string name="selectDistrictMand">Select District<font color='red'>*</font></string>
+    <string name="selectFacility">Select Facility </string>
+    <string name="errorselectFacility">Please select the facility</string>
+
+    <string name="selectFacilityMand">Select Facility<font color='red'>*</font></string>
+    <string name="selectFacilityAddress">Select Facility Address</string>
+    <string name="errorPassword">Please enter the password</string>
+    <string name="selectNurse">Select your name </string>
+    <string name="erroselectNurse">Please select your name</string>
+    <string name="electNurseMand">Select your name<font color='red'>*</font></string>
+    <string name="selectNurseMand">Please select your name<font color='red'>*</font></string>
+    <string name="min">/ min</string>
+
+    <string name="exit">Press again to exit</string>
+
+    //Values
+    <string name="help">Help</string>
+    <string name="language">हिंदी</string>
+    <string name="pleaseLoginToYourLounge">Please login to your Lounge</string>
+    <string name="pleaseLogin">Please login</string>
+    <string name="english">English</string>
+    <string name="a">A</string>
+    <string name="अ">अ</string>
+    <string name="hindi">हिंदी</string>
+    <string name="changeLanguage">Change Language</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="dataWillBeLost">Changing the language will delete the entered data</string>
+    <string name="splashLine1English">Let’s provide the best </string>
+    <string name="splashLine2English">loving care </string>
+    <string name="splashLine3English">to\nour mothers and babies.</string>
+    <string name="splashLine1Hindi">आइये, अपनी माँओं और शिशुओं की सबसे\nबेहतर</string>
+    <string name="splashLine2Hindi">प्यार भरी देखभाल</string>
+    <string name="splashLine3Hindi">करें.</string>
+    <string name="logout">Logout</string>
+    <string name="sync">Sync</string>
+    <string name="noDataFound">No data found</string>
+    <string name="allNurseCheckedIn">All nurses have already checked-in their lounge.</string>
+    <string name="pleaseIdentifyYourself">Please identify yourself.</string>
+    <string name="pleaseClickSelfie">Please click a selfie to Check-in</string>
+    <string name="pleaseClickLounge">Please click the photo of the lounge</string>
+    <string name="pleaseClickSelfieOut">Please click a selfie to Checkout</string>
+    <string name="hi">Hi</string>
+    <string name="welcome">Welcome to the Lounge!</string>
+    <string name="sureToCancel">Process is incomplete, are you sure you want to cancel the process?</string>
+    <string name="youHaveCheckedIn">You have checked-in to the</string>
+    <string name="to">to</string>
+    <string name="slot8am">8 am</string>
+    <string name="slot2pm">2 pm</string>
+    <string name="slot8pm">8 pm</string>
+    <string name="shift">shift</string>
+    <string name="birthshift">shift.</string>
+    <string name="youHaveCheckedInSlot1">You have checked in to the <font color='red'>8 am</font> to <font color='red'>2 pm shift at</font></string>
+    <string name="youHaveCheckedInSlot2">You have checked in to the <font color='red'>2 pm</font> to <font color='red'>8 pm shift at</font></string>
+    <string name="youHaveCheckedInSlot3">You have checked in to the <font color='red'>8 pm</font> to <font color='red'>8 am shift at</font></string>
+    <string name="at">at</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="sorry">Sorry!</string>
+    <string name="youAreOnTime">You are on time!</string>
+    <string name="youAreLate">You are late!</string>
+    <string name="late">Late</string>
+    <string name="yourStats">Your stats for this month</string>
+    <string name="totalShifts">Total shifts</string>
+    <string name="onTime">On Time</string>
+    <string name="lounge">Lounge</string>
+    <string name="infant">Baby</string>
+    <string name="setting">Setting</string>
+    <string name="mother">Mother</string>
+    <string name="relation">Select Relation</string>
+    <string name="errorRelation">Please select the relation with the baby</string>
+    <string name="father">Father</string>
+    <string name="husband">Husband</string>
+    <string name="sister">Sister</string>
+    <string name="brother">Brother</string>
+    <string name="grandMother">Grand Mother</string>
+    <string name="grandFather">Grand Father</string>
+    <string name="uncle">Uncle</string>
+    <string name="aunty">Aunty</string>
+    <string name="otherRelative">Other relatives (please specify)</string>
+    <string name="otherSpecify">Other (please specify)</string>
+    <string name="admission">Admission</string>
+    <string name="motherAdmission">Mother Admission</string>
+    <string name="babyAdmission">Baby Admission</string>
+    <string name="assessment">Assessment</string>
+    <string name="checkList">Checklist<font color='red'>*</font></string>
+    <string name="checkListbithoutStirck">Checklist</string>
+    <string name="guardianNameMand">Guardian\'s name<font color='red'>*</font></string>
+    <string name="contactNumberMand">Phone Number<font color='red'>*</font></string>
+    <string name="organisationNameMand">Organisation\'s name<font color='red'>*</font></string>
+    <string name="organisationNumberMand">Organisation\'s number<font color='red'>*</font></string>
+    <string name="organisationAddressMand">Organisation\'s address<font color='red'>*</font></string>
+    <string name="hospitalRegistrationNumberMand">Registration Number provided from the hospital<font color='red'>*</font></string>
+    <string name="motherRegistrationNumber">Registration Number provided from the hospital<font color='red'>*</font></string>
+
+    <string name="RegistrationNumber">Registration Number</string>
+
+    <string name="hospitalRegistrationNumber">Registration Number provided from the hospital</string>
+    <string name="relationWithChildMand">Relationship with Child<font color='red'>*</font></string>
+    <string name="errorrelationWithChildMand">Please specify the relationship with child</string>
+    <string name="relationWithMotherMand">Relation\nwith mother<font color='red'>*</font></string>
+    <string name="motherNameMand">Mother\'s name<font color='red'>*</font></string>
+    <string name="clickHerPhotoMand">Please take consent from Mother for her photo<font color='red'>*</font></string>
+    <string name="pleaseTellMother">Please take consent from Mother for her photo</string>
+    <string name="pleaseClickBabyPhoto">Please take the permission of the mother/ guardian, then click the photo of the baby</string>
+    <string name="pleaseClickBabyPhotoGuardian">Please take the permission of the mother/ guardian, then click the photo of the baby </string>
+    <string name="clickBabyPhotoMand">Click the picture of the baby <font color='red'>*</font></string>
+    <string name="deliveryDate">Delivery date</string>
+    <string name="deliveryDateMand">Delivery date<font color='red'>*</font></string>
+    <string name="lmpDate">LMP( last menstrual period) Date<font color='red'>*</font></string>
+    <string name="lmpDateWithoutAsterick">LMP( last menstrual period) Date</string>
+    <string name="deliveryTime">Delivery time<font color='red'>*</font></string>
+    <string name="babyBirthWeight">Baby\'s birth weight<font color='red'>*</font></string>
+    <string name="gender">Gender<font color='red'>*</font></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="ambiguous">Ambiguous</string>
+    <string name="deliveryType">Delivery Type<font color='red'>*</font></string>
+
+    <string name="pleaseTakePermissionFromMother">Please inform all the resident mothers, and click a picture of the Lounge such that all the beds are visible.</string>
+    <string name="iHaveTakenPermission">I have taken permission from mothers before clicking the picture.</string>
+    <string name="clickImage">Click Image</string>
+    <string name="itIsImpToMaintaneTemp">It is very important to maintain a stable temperature in the Lounge between 27-30°C</string>
+    <string name="whatIsTempRecorded">What is the temperature recorded by the wall- mounted thermometer in the Lounge?</string>
+    <string name="tickHereIfThermoNotWorking">Tick here if Lounge thermometer is not working</string>
+    <string name="tooWarm">Too warm! Please check if the A/C is working and has the right temperature setting.</string>
+    <string name="tooCold">Too cold! Please adjust the A/C or use room heater to warm the room.</string>
+    <string name="tempIsGood">Lounge temperature is good!</string>
+    <string name="loungeThermoNotWorking">Lounge thermometer is not working. Please notify concerned authority to get it repaired/ replaced ASAP.</string>
+    <string name="theseBabyAreFragile">These babies are very fragile and can easily get infection. Observe the safety of the Lounge. </string>
+    <string name="noPadsFilthLying">No pads/ filth is lying around.</string>
+    <string name="outsideShoesAreNotWorn">Outside shoes are not being worn inside the lounge.</string>
+    <string name="thereIsNoOneInside">There is no one inside the lounge who has visible signs of infection.</string>
+    <string name="handSanitizersAvailable">Hand sanitizers are available and accessible to everyone.</string>
+    <string name="generalCleanliness">General cleanliness and hygiene are maintained inside the lounge.</string>
+    <string name="noMyLoungeWasUnsafe">No! My lounge was unsafe when I checked-in.</string>
+    <string name="yesMyLoungeWasSafe">Yes! My Lounge was safe when I checked-in.</string>
+    <string name="yourLoungeAssessmentAtCheckIn">Congratulations! Lounge Assessment is completed.</string>
+    <string name="youClickedTheLoungePhoto">You clicked the lounge photo after taking permission from mothers.</string>
+    <string name="surveyTheToliet">Survey the toilet.</string>
+    <string name="toiletIsClean"><![CDATA[Toilet seat is clean & toilet is flushed.]]></string>
+    <string name="toiletTapRunningWater">Toilet tap and washbasin have running water.</string>
+    <string name="toiletFloorClean">Toilet floor is clean and dry.</string>
+    <string name="handwashingSoupAvail">Handwashing soap is available.</string>
+    <string name="dustbinIsPresent">Dustbin is present.</string>
+    <string name="surveyTheWashroom">Survey the washroom.</string>
+    <string name="washroomIsClean"><![CDATA[Washroom is clean & floor is wiped.]]></string>
+    <string name="cleanMugBucketArePresent">Clean bucket and mug are present.</string>
+    <string name="runningWaterInTap">Is running water available in the tap?</string>
+    <string name="soapIsAvailable">Soap is available.</string>
+    <string name="surveyTheCommonArea">Survey the common area including dining area.</string>
+    <string name="commonAreaIsClean">Common area is clean, with no filth lying around.</string>
+    <string name="areaForWashing">Area for washing utensils is clean.</string>
+    <string name="dustbinArePresentOnLocation">Dustbins are present in appropriate locations.</string>
+    <string name="toiletWasNotMaintained">No! Toilet was not maintained when I checked-in.</string>
+    <string name="toiletWasInCondition">Yes! Toilet was maintained when I checked-in.</string>
+    <string name="washroomWasNotMaintained">No! Washroom was not maintained when I checked-in.</string>
+    <string name="washroomWasMaintained">Yes! Washroom was maintained when I checked-in.</string>
+    <string name="commonAreaWasNot">No! Common area was not maintained when I checked-in.</string>
+    <string name="commonAreaWasMaintained">Yes! Common area was maintained when I checked-in.</string>
+    <string name="youNotedTheTemp">You noted the temperature, and it was good!</string>
+    <string name="youObservedLoungeFoundSafe">No! Common area was not maintained when I checked-in.</string>
+    <string name="youSurveyedToiletNotMaintain">No! Toilet was not maintained when I checked-in.</string>
+    <string name="youSurveyedWashroomNotMaintain">No! Washroom was not maintained when I checked-in.</string>
+    <string name="youSurveyedCommonAreaMaintain">No! Common Area was not maintained when I checked-in.</string>
+    <string name="submit">Submit</string>
+    <string name="passwordWorng">Password is wrong , kindly enter the correct password</string>
+    <string name="helpToast">You will soon recieve a call for you support</string>
+
+    <string name="notSubmitted">Not Submitted</string>
+    <string name="status">Status</string>
+    <string name="loungeServices">Lounge Services</string>
+    <string name="todaysDashboard">Today\'s Dashboard</string>
+    <string name="monthlyDashboard">Monthly Dashboard</string>
+    <string name="shiftDuties">Shift Duties</string>
+    <string name="loungeAssessment">Lounge Assessment</string>
+    <string name="facilityBirthReview">Facility Birth Review</string>
+    <string name="infantAssessment">Baby Assessment</string>
+    <string name="motherAssessment">Mother Assessment</string>
+    <string name="currentOccupancy">Current occupancy</string>
+    <string name="noOfInfants">No. of Baby</string>
+    <string name="noOfMothers">No. of mothers</string>
+    <string name="bedsAvailable">Total KMC Bed</string>
+    <string name="nursesOnDuty">Nurses on duty</string>
+    <string name="lastSynced">Last synced</string>
+    <string name="lastDoctorRound">Last doctor round</string>
+    <string name="doctorName">Doctor\'s Name <font color='red'>*</font></string>
+    <string name="degreeF">\u00B0 F</string>
+    <string name="degree" translatable="false">\u00B0</string>
+    <string name="degreeC">\u00B0 C</string>
+    <string name="takePermission">Kindly take permission from mothers before clicking lounge picture</string>
+    <string name="errorEnterRoomTemperature">Kindly enter lounge temperature.</string>
+    <string name="errorSelectLoungeSafety">Select all lounge safeties</string>
+    <string name="errorSelectLoungeToilet">Select all lounge toilet conditions</string>
+    <string name="errorSelectLoungeWashroom">Select all lounge washroom conditions</string>
+    <string name="errorSelectLoungeCommon">Select all lounge common area conditions.</string>
+    <string name="dataSaved">Data has been saved Successfully</string>
+
+    <string name="provisionOfMeals">Provision of meals</string>
+    <string name="eightAmToTwoPm">8:00 am to 2:00 pm</string>
+    <string name="twoPmToEightPm">2:00 pm to 8:00 pm</string>
+    <string name="eightPmToTwoAm">8:00 pm to 8:00 am</string>
+    <string name="breakFast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="dailyChangingBedSheet">Daily changing of bed sheets</string>
+    <string name="availabilityOfCleanWater">Availability of clean drinking water</string>
+    <string name="sanitationInfectionControl">Sanitation and infection control</string>
+    <string name="toiletWashroom">Toilet/ washroom</string>
+    <string name="diningCommonArea">Dining area/ Common area</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="youAreConfirmingLoungeClean">Are you sure that the Lounge has been cleaned and sanitized as per hospital protocols? </string>
+    <string name="youAreConfirmingToiletClean">Are you sure that the toilet/ washroom has been cleaned and sanitized as per hospital protocols?</string>
+    <string name="youAreConfirmingDiningAreaClean">Are you sure that the dining area/ common area has been cleaned and sanitized as per hospital protocols?</string>
+    <string name="areYouSureBedsheetChanged">Are you sure all bed sheets have been changed in all beds? </string>
+    <string name="areYouSureBreakfastProvided">Are you sure food has been provided to all mothers in the Lounge?</string>
+    <string name="areYouSureLunchProvided">Are you sure lunch has been provided to all mothers in the Lounge?</string>
+    <string name="areYouSureDinnerProvided">Are you sure dinner has been provided to all mothers in the Lounge?</string>
+    <string name="areYouSureWaterAvailable">Are you sure that there is clean drinking water available in the Lounge?</string>
+    <string name="totalLiveBirth">Total (LBW) live births</string>
+    <string name="totalInfants2500_2000">Total baby between 2000 grams - 2500 grams </string>
+    <string name="totalInfants_2000"><![CDATA[Total baby <2000grams]]></string>
+    <string name="newAdmissions">New admissions</string>
+    <string name="totalInfantsNotAdmitted">Total baby not yet admitted</string>
+    <string name="onTimeDutyCheckin">On-time duty check-in</string>
+    <string name="loungeCleanedSanitized">Lounge cleaned and sanitized</string>
+    <string name="overAllInfantStatus">Overall baby\'s status</string>
+    <string name="infantRecievedKmcPosition"><![CDATA[Baby received > 12 hours of KMC position]]></string>
+    <string name="bedOccupancy">Bed occupancy</string>
+    <string name="infantsExclusiveBreastfeed">Baby exclusively breastfeed</string>
+    <string name="outOf">out of</string>
+    <string name="infantsWeighed">Baby weighed</string>
+    <string name="onTimeAssessent">On-time Assessment</string>
+    <string name="of">of</string>
+    <string name="infantsAssessedByDoctor">Baby assessed by doctor</string>
+    <string name="check_list_1">File issued to baby.</string>
+    <string name="check_list_2">Spread clean bed sheet on bed.</string>
+    <string name="check_list_3">Mother\'s/ Guardian\'s belongings stored in the locker room.</string>
+    <string name="check_list_4">Counseled mother\'s/ guardian\'s on Lounge rules.</string>
+    //Values
+    <string name="degreeValue" translatable="false">\u00B0</string>
+    <string name="degreeFValue" translatable="false">F</string>
+    <string name="degreeCValue" translatable="false">C</string>
+    <string name="breastValue" translatable="false">Direct breastfeeding</string>
+    <string name="spoonValue" translatable="false">Spoon/ Palladai</string>
+    <string name="ogTubeValue" translatable="false">OG Tube</string>
+    <string name="ivDripValue" translatable="false">IV Drip</string>
+    <string name="ebfValue" translatable="false">EBF</string>
+    <string name="formulaValue" translatable="false">Formula</string>
+    <string name="otherValue" translatable="false">Other</string>
+    <string name="yesValue" translatable="false">Yes</string>
+    <string name="noValue" translatable="false">No</string>
+    <string name="bplValue" translatable="false">BPL (Yellow Ration Card)</string>
+    <string name="aplValue" translatable="false">APL (White Ration Card)</string>
+    <string name="arcValue" translatable="false">Antyodaya Ration Card (Red Ration Card)</string>
+    <string name="noRationValue" translatable="false">No Ration Card</string>
+    <string name="maleValue" translatable="false">Male</string>
+    <string name="femaleValue" translatable="false">Female</string>
+    <string name="indefiniteValue" translatable="false">Ambiguous</string>
+    <string name="deliveryType1Value" translatable="false">Normal</string>
+    <string name="deliveryType2Value" translatable="false">Normal with Episiotomy</string>
+    <string name="deliveryType3Value" translatable="false">Assisted - Forceps</string>
+    <string name="deliveryType4Value" translatable="false">Assisted - Vacuum</string>
+    <string name="deliveryType5Value" translatable="false">Caesarian</string>
+    <string name="pb_1Value" translatable="false">At Home</string>
+    <string name="pb_2Value" translatable="false">On the way</string>
+    <string name="motherValue" translatable="false">Mother</string>
+    <string name="fatherValue" translatable="false">Father</string>
+    <string name="husbandValue" translatable="false">Husband</string>
+    <string name="otherRelativeValue" translatable="false">Other relatives</string>
+    <string name="sisterValue" translatable="false">Sister</string>
+    <string name="brotherValue" translatable="false">Brother</string>
+    <string name="grandMotherValue" translatable="false">Grand Mother</string>
+    <string name="grandFatherValue" translatable="false">Grand Father</string>
+    <string name="uncleValue" translatable="false">Uncle</string>
+    <string name="auntyValue" translatable="false">Aunty</string>
+    <string name="normal_healthyValue" translatable="false">Normal/Healthy</string>
+    <string name="infectedValue" translatable="false">Infected</string>
+    <string name="bleedingValueue" translatable="false">Bleeding</string>
+    <string name="it_s_fullValue" translatable="false">It\'s Full</string>
+    <string name="more_than_half_fullValue" translatable="false">More than half full</string>
+    <string name="filled_with_a_quarter_or_lessValue" translatable="false">Filled with a quarter or less</string>
+    <string name="activeValue" translatable="false">Active</string>
+    <string name="healthyValue" translatable="false">Healthy</string>
+    <string name="lethargicValue" translatable="false">Lethargic</string>
+    <string name="danger1Value" translatable="false">The baby\'s breathing stops for more than 20 sec</string>
+    <string name="danger2Value" translatable="false">Chest indrawing</string>
+    <string name="danger3Value" translatable="false">Grunting/ Wheezing sound during breathing</string>
+    <string name="danger4Value" translatable="false">Check for Juandice</string>
+    <string name="danger5Value" translatable="false">Seizures /Fits and convulsions</string>
+    <string name="danger6Value" translatable="false">Inactive /Lethargy</string>
+    <string name="danger7Value" translatable="false">Recurrent Vomitting</string>
+    <string name="danger8Value" translatable="false">Unable to feed in the last 24 hours</string>
+    <string name="danger9Value" translatable="false">Bleeding from any part of the body</string>
+    <string name="hinduValue" translatable="false">Hindu</string>
+    <string name="muslimValue" translatable="false">Muslim</string>
+    <string name="sikhValue" translatable="false">Sikh</string>
+    <string name="isaiValue" translatable="false">Isai</string>
+    <string name="buddhismValue" translatable="false">Buddhism</string>
+    <string name="generalValue" translatable="false">General</string>
+    <string name="obcValue" translatable="false">OBC</string>
+    <string name="scValue" translatable="false">SC</string>
+    <string name="stValue" translatable="false">ST</string>
+    <string name="edu1Value" translatable="false">Uneducated</string>
+    <string name="edu2Value" translatable="false">Less Than Fifth Grade</string>
+    <string name="edu3Value" translatable="false">Fifth Grade Pass</string>
+    <string name="edu4Value" translatable="false">Eight Grade Pass</string>
+    <string name="edu5Value" translatable="false">High School Pass</string>
+    <string name="edu6Value" translatable="false">Inter Pass</string>
+    <string name="edu7Value" translatable="false">Polytechnic - Diploma Pass</string>
+    <string name="edu8Value" translatable="false">Graduate</string>
+    <string name="edu9Value" translatable="false">Postgraduate</string>
+    <string name="edu10Value" translatable="false">PHD</string>
+    <string name="step7QA1Value" translatable="false">Clear</string>
+    <string name="step7QA2Value" translatable="false">Inverted nipples</string>
+    <string name="step7QA3Value" translatable="false">Normal</string>
+    <string name="step7QA4Value" translatable="false">Swollen breast with redness</string>
+    <string name="check_list_1Value" translatable="false">File issued to baby</string>
+    <string name="check_list_2Value" translatable="false">Spread clean bed sheet on bed</string>
+    <string name="check_list_3Value" translatable="false">Mother\'s /Guardian\'s belongings stored in the locker</string>
+    <string name="check_list_4Value" translatable="false">Counseled mother / guardian on lounge rules</string>
+    <string name="ambulanceValue" translatable="false">Ambulance</string>
+    <string name="trans2Value" translatable="false">Private</string>
+    <string name="discharge_checklist_1Value" translatable="false">Stable and not on parenteral medication, the baby’s general health is good and there is no concurrent disease such as apnoea or infection</string>
+    <string name="discharge_checklist_2Value" translatable="false">Maintaining temperature in the KMC position and mother’s bed for 3 consecutive days at room temperature</string>
+    <string name="discharge_checklist_3Value" translatable="false">Gaining 15–20 grams per day for at least 3 consecutive days</string>
+    <string name="discharge_checklist_4Value" translatable="false">Accepting feeds directly from breast (preferable) or by spoon, paladai or cup, he is feeding well, and is exclusively or predominantly breastfed</string>
+    <string name="discharge_checklist_5Value" translatable="false">The mother is confident in caring for the baby and is able to come regularly for follow-up visits. At discharge, the mother and family members must be taught to ensure that the baby is nursed in a warm room and is breastfed (Given expressed milk using paladai or cup). They should be adequately told about hygiene, danger signs, follow-up visits, immunization and prompt care seeking at a health facility. KMC should be continued as long as required and baby and mother should not be discharged in a hurry.</string>
+    <string name="nq1o1Value" translatable="false">Peripheral Cyanosis (Observe if skin is bluish only in extremities or finger, hand, and feet)</string>
+    <string name="nq1o2Value" translatable="false">Central Cyanosis (Look for bluish discoloration around the mouth, lips and tongue)</string>
+    <string name="nq1o3Value" translatable="false">No Cyanosis</string>
+    <string name="dontKnowValue" translatable="false">Dont Know</string>
+    <string name="softRelaxedValue" translatable="false">Soft (Relaxed)</string>
+    <string name="hardValue" translatable="false">Hard/Collapsed (Contracted)</string>
+    <string name="notApplicableValue" translatable="false">Not Applicable</string>
+    <string name="hospitalValue" translatable="false">Hospital</string>
+    <string name="indiaValue" translatable="false">India</string>
+    <string name="uttarPradeshValue" translatable="false">Uttar Pradesh</string>
+    <string name="localizedValues" translatable="false">Localized</string>
+    <string name="generalizedValues" translatable="false">Generalized</string>
+    <string name="sizeQ3O1Values" translatable="false"><![CDATA[< 1mm]]></string>
+    <string name="sizeQ3O2Values" translatable="false">1 – 3mm</string>
+    <string name="sizeQ3O3Values" translatable="false"><![CDATA[> 3mm]]></string>
+    <string name="noQ4O1Values" translatable="false"><![CDATA[>=1 & <5]]></string>
+    <string name="noQ4O2Values" translatable="false"><![CDATA[>=5 & <10]]></string>
+    <string name="noQ4O3Values" translatable="false"><![CDATA[>= 10]]></string>
+
+    <string name="labourRoomValues" translatable="false">Labour room</string>
+    <string name="sncuValues" translatable="false">SNCU</string>
+    <string name="pncWardValues" translatable="false">PNC Ward</string>
+    <string name="msaWardValues" translatable="false">MSA Ward</string>
+
+    <string name="normalDischargeValues" translatable="false">Normal Discharge</string>
+    <string name="spacing1Value" translatable="false">Less than 1 Yr</string>
+    <string name="spacing2Value" translatable="false">1-2 Yr</string>
+    <string name="spacing3Value" translatable="false">Greater than 2-3 Yr</string>
+    <string name="spacing4Value" translatable="false">Greater than 3 Yr</string>
+
+    <string name="notApplicableShortValue" translatable="false">N/A</string>
+
+    <string name="complications1Value" translatable="false">Perinatal Asphyxia</string>
+    <string name="complications2Value" translatable="false">Baby of Diabetic mother</string>
+    <string name="complications3Value" translatable="false">Meconium Aspiration</string>
+    <string name="complications4Value" translatable="false">Major Congenital Malformation</string>
+    <string name="complications5Value" translatable="false">Any other, please specify</string>
+
+    <string name="motherOwnMilkValue" translatable="false">Mother\'s own milk</string>
+    <string name="otherHumanMilkValue" translatable="false">Other Human Milk</string>
+    <string name="formulaMilkValue" translatable="false">Formula Milk</string>
+    <string name="animalMilkValue" translatable="false">Animal Milk</string>
+    <string name="ivFluidValue" translatable="false">IV fluid</string>
+    <string name="hbValue" translatable="false">HB</string>
+    <string name="pcvValue" translatable="false">PCV</string>
+    <string name="wbcValue" translatable="false">Total WBC Count</string>
+    <string name="diffWbcValue" translatable="false">Differential WBC Count</string>
+    <string name="bandFormValue" translatable="false">Band Form/ I.T. Ratio</string>
+    <string name="plateletCountValue" translatable="false">Platelet Count</string>
+    <string name="periSmearValue" translatable="false">Peripheral Smear</string>
+    <string name="ptValue" translatable="false">PT/ PTTK/ FDP</string>
+    <string name="crpValue" translatable="false">CRP</string>
+    <string name="rbgValue" translatable="false">Random Blood Glucose</string>
+    <string name="bunValue" translatable="false">Blood Urea Nitrogen</string>
+    <string name="serumCreatioineValue" translatable="false">Serum Creatioine</string>
+    <string name="serumCalciumValue" translatable="false">Serum Calcium</string>
+    <string name="serumSodiumValue" translatable="false">Serum Sodium</string>
+    <string name="serumPotassiumValue" translatable="false">Serum Potassium</string>
+    <string name="serumBilirubinValue" translatable="false">Serum Bilirubin : Total/ Indirect/ Direct</string>
+    <string name="sgptValue" translatable="false">SGPT</string>
+    <string name="totalProteinValue" translatable="false">Total Protein/ Ser.Albumin</string>
+    <string name="urineRnMValue" translatable="false">Urine R&amp;M</string>
+    <string name="stoolForOccultBloodValue" translatable="false">Stool For Occult Blood</string>
+    <string name="bloodGasValue" translatable="false">Blood Gas : Arterial/ Venous</string>
+    <string name="csfValue" translatable="false">C.S.F.</string>
+    <string name="urineCultureValue" translatable="false">Urine Culture</string>
+    <string name="bloodCultureValue" translatable="false">Blood Culture</string>
+    <string name="xRayValue" translatable="false">X-Ray</string>
+    <string name="usgValue" translatable="false">USG</string>
+    <string name="ctMRIValue" translatable="false">CT/ MRI</string>
+    <string name="bloodSugarValue" translatable="false">Blood Sugar</string>
+    <string name="bloodCollectionValue" translatable="false">Blood Collection</string>
+    <string name="deadValue" translatable="false">Dead</string>
+    <string name="motherNotReferredValue" translatable="false">Baby was referred but mother did not accompanying</string>
+    <string name="motherInWardValue" translatable="false">Mother is in a different ward in same hospital</string>
+    <!--    <string name="unknownOrphanValue" translatable="false">Unknown / Baby is an orphan</string>-->
+    <string name="inbornValue" translatable="false">Inborn</string>
+    <string name="outbornValue" translatable="false">Outborn</string>
+    <string name="referralValue" translatable="false">Referral</string>
+    <string name="insideReferralValue" translatable="false">Inside Referral</string>
+    <string name="noRecordFound" translatable="false">No Record Found</string>
+
+    <string name="alertValue" translatable="false">Alert</string>
+    <string name="comatoseValue" translatable="false">Comatose</string>
+    <string name="toneValue" translatable="false">Muscle tone</string>
+    <string name="limpValue" translatable="false">Limp/ Flaccid</string>
+    <string name="centralCyanosisValue" translatable="false">Central Cyanosis</string>
+    <string name="paleValue" translatable="false">Pale</string>
+    <string name="pinkValue" translatable="false">Pink</string>
+    <string name="peripheralCyanosisValue" translatable="false">Peripheral Cyanosis</string>
+    <string name="jaundiceValue" translatable="false">Jaundice</string>
+    <string name="bullet" translatable="false"><font color='#0ac7c7'>\u25AA</font></string>
+
+    <string name="respiratoryRate">Respiratory Rate</string>
+
+    <string name="absentValue" translatable="false">Absent</string>
+    <string name="presentValue" translatable="false">Present</string>
+    <string name="unableToConfirmValue" translatable="false">Unable to Confirm</string>
+
+    <string name="poorValue" translatable="false">Poor</string>
+    <string name="goodValue" translatable="false">Good</string>
+
+    <string name="redValue" translatable="false">Red</string>
+    <string name="dischargeValue" translatable="false">Discharge</string>
+    <string name="normalValue" translatable="false">Normal</string>
+
+    <string name="noneObservedValue" translatable="false">None Observed</string>
+    <string name="yes_10Value" translatable="false"><![CDATA[Yes<10]]></string>
+    <string name="yesGreater10Value" translatable="false"><![CDATA[Yes>=10]]></string>
+    <string name="abscessValue" translatable="false">Abscess</string>
+
+    <string name="presentOnAdmissionValue" translatable="false">Present on Admission</string>
+    <string name="pastHistoryValue" translatable="false">Past History</string>
+
+    <string name="mlValue" translatable="false">ML</string>
+    <string name="dropsValue" translatable="false">Drops</string>
+    <string name="gestOption1Value" translatable="false"><![CDATA[<28 Weeks (Extremely preterm)]]></string>
+    <string name="gestOption2Value" translatable="false"><![CDATA[28 - 31 Weeks (Very Preterm)]]></string>
+    <string name="gestOption3Value" translatable="false"><![CDATA[32 - 34 Weeks (Moderate Preterm)]]></string>
+    <string name="gestOption4Value" translatable="false"><![CDATA[>34 Weeks (Late Preterm)]]></string>
+    <string name="discharge1Value" translatable="false">Referral</string>
+    <string name="discharge2Value" translatable="false">LAMA</string>
+    <string name="discharge3Value" translatable="false">DOPR</string>
+    <string name="discharge4Value" translatable="false">Doctor\'s discretion</string>
+    <string name="discharge5Value" translatable="false">Absconded</string>
+    <string name="discharge6Value" translatable="false">Died</string>
+
+    <string name="capillaryFillingTime">Capillary Filling Time >3s</string>
+    <string name="capillaryFillingTimeLess3"><![CDATA[Capillary Filling Time <3s]]></string>
+    <string name="areYouReferred">Have you been referred from another KMC Lounge?</string>
+    <string name="isMotherAccompanying">Is the mother accompanying the child ?</string>
+    <string name="reason">Reason</string>
+    <string name="dead">Dead</string>
+    <string name="motherNotReferred">Baby was referred &amp; mother did not accompanied</string>
+    <string name="motherInWard">Mother is in a different ward in same hospital</string>
+    <string name="unknownOrphan">Unknown/ Baby is an orphan</string>
+    <string name="other">Other</string>
+    <string name="errorSelectReason">Please select a reason from the dropdown</string>
+    <string name="errorEnterReason">Please Enter a valid reason</string>
+    <string name="vitalSigns">Vital Signs</string>
+    <string name="gestAgeAssessment">Gest. Age Assessment</string>
+    <string name="generalExamination">General Examination</string>
+    <string name="respiratoryAssessment">Respiratory Assessment</string>
+    <string name="feedingAssessment">Feeding Assessment</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperatureMand">Temperature<font color='red'>*</font></string>
+    <string name="measureTheTemperature">Take the temperature of the Baby</string>
+    <string name="isThermometerAvailable">Is the Thermometer available and working? <font color='red'>*</font></string>
+    <string name="ErrorisThermometerAvailable">Is the Thermometer Available and Working?</string>
+    <string name="respiratoryCount">Respiratory Count</string>
+    <string name="measureTheRespiratoryRate">Measure the Respiratory rate<font color='red'>*</font></string>
+    <string name="pulseOximetry">Pulse Oximetry</string>
+    <string name="havePulseOximetry">Do you have a Pulse Oximeter? <font color='red'>*</font></string>
+    <string name="havePulseOximetryerror">Do you have a Pulse Oximeter? </string>
+    <string name="spo2">SpO2</string>
+    <string name="spo2Mand">SpO2<font color='red'>*</font></string>
+    <string name="pulseRate">Pulse Rate</string>
+    <string name="pulseRateMand">Pulse Rate<font color='red'>*</font> </string>
+    <string name="crt">Capillary Refill Time</string>
+    <string name="crtResult">Capillary Refill Time (CRT) >3sec </string>
+    <string name="isCrtText"><![CDATA[Is Capillary Refill Time (CRT) >3sec? ]]> <font color='red'>*</font></string>
+
+    <string name="knowledgeCapiliaryFilling">Do you know how to measure Capillary Refill Time (CRT)? <font color='red'>*</font></string>
+    <string name="knowledgeCapiliaryFillingerror">Do you know how to measure Capillary Refill Time (CRT)?</string>
+
+    <string name="isCrt3"><![CDATA[ Please select CRT Accordingly ]]></string>
+    <string name="gestOption1"><![CDATA[<28 Weeks (Extremely Preterm)]]></string>
+    <string name="gestOption2"><![CDATA[28 - 31 Weeks (Very Preterm)]]></string>
+    <string name="gestOption3"><![CDATA[32 - 34 Weeks (Moderate Preterm)]]></string>
+    <string name="gestOption4"><![CDATA[>34 Weeks (Late Preterm)]]></string>
+
+    <string name="gestOption1Title">Extremely Preterm</string>
+    <string name="gestOption2Title">Very Preterm</string>
+    <string name="gestOption3Title">Moderate Preterm</string>
+    <string name="gestOption4Title">Late Preterm</string>
+
+    <string name="alertness">Alertness</string>
+    <string name="alertnessMand">Alertness<font color='red'>*</font></string>
+    <string name="alert">Alert</string>
+    <string name="lethargic">Lethargic</string>
+    <string name="comatose">Comatose</string>
+    <string name="limp">Limp/ Flaccid</string>
+    <string name="increaseTone">Muscle Tone</string>
+    <string name="tone">Muscle Tone</string>
+    <string name="Increasedtone">Increased Tone</string>
+    <string name="IncreasedtoneResult">Increased Tone</string>
+    <string name="toneMand">Muscle Tone<font color='red'>*</font></string>
+    <string name="toneMandmans">Muscle Tone <font color='red'>*</font></string>
+    <string name="active">Active</string>
+    <string name="color">Color</string>
+    <string name="colorMand">Color<font color='red'>*</font></string>
+    <string name="centralCyanosis">Central\nCyanosis</string>
+    <string name="pale">Pale</string>
+    <string name="pink">Normal</string>
+    <string name="peripheralCyanosis">Peripheral\nCyanosis</string>
+    <string name="jaundice">Jaundice</string>
+
+    <string name="apnea">Apnea</string>
+    <string name="apneaMand">Apnea<font color='red'>*</font></string>
+    <string name="grunting">Grunting</string>
+    <string name="gruntingMand">Grunting<font color='red'>*</font></string>
+    <string name="absent">Absent</string>
+    <string name="present">Present</string>
+    <string name="unableToConfirm">Unable to\nConfirm</string>
+    <string name="chestIndrawing">Chest Indrawing</string>
+    <string name="chestIndrawingMand">Chest Indrawing<font color='red'>*</font></string>
+    <string name="interestInFeeding"> Please ask the mother about the baby\'s interest in feeding</string>
+    <string name="interestInFeedingMand">Interest in feeding<font color='red'>*</font></string>
+    <string name="interestInFeedingMandResult">Interest in feeding</string>
+    <string name="askTheMother">(ask the mother)</string>
+    <string name="isMotherSufficientLactation">Kindly ask the mother , is she having sufficient lactation</string>
+    <string name="isMotherSufficientLactationMand">Is mother having sufficient lactation?<font color='red'>*</font></string>
+    <string name="sufficientLactation">Sufficient lactation</string>
+    <string name="sucking">Kindly ask the mother about the nature of baby\'s suction</string>
+    <string name="suckingMand">The way baby is Sucking<font color='red'>*</font></string>
+    <string name="suckingMandResult">The way baby is Sucking</string>
+    <string name="poor">Poor</string>
+    <string name="good">Good</string>
+    <string name="umbilicus">Please select the nature of the umbilicus of the baby</string>
+    <string name="umbilicusMand">Umbilicus of baby<font color='red'>*</font></string>
+    <string name="umbilicusResult">Umbilicus of baby</string>
+    <string name="red">Red</string>
+    <string name="discharge">Discharge</string>
+    <string name="newdischarge">Discharge</string>
+    <string name="normal">Normal</string>
+    <string name="skinRashOnPustules">Skin Rash Or pustules, Please select accordingly</string>
+    <string name="skinRashOnPustulesMand">Skin rash or pustules<font color='red'>*</font></string>
+    <string name="skinRashOnPustulesMandNew">Rashes or pustules on baby\'s skin<font color='red'>*</font></string>
+    <string name="noneObserved">None Observed</string>
+    <string name="yes_10"><![CDATA[Yes<10]]></string>
+    <string name="yesGreater10"><![CDATA[Yes>=10]]></string>
+    <string name="abscess">Abscess</string>
+    <string name="complicationsNotedAtBirth">Complications noted at birth</string>
+    <string name="complicationsNotedAtBirthMand">Complications noted at birth</string>
+    <string name="perinatalAsphyxia">Perinatal Asphyxia</string>
+    <string name="babyOfDiabeticMother">Baby of Diabetic Mother</string>
+    <string name="meconiumAspiration">Meconium Aspiration</string>
+    <string name="majorCongenitalMalformation">Major Congenital Malformation</string>
+    <string name="anyOtherPleaseSpecify">Any other, please specify</string>
+    <string name="bulgingAnteriorFontanelle">For Bulging Anterior Fontanelle, Kindly select Accordingly</string>
+    <string name="bulgingAnteriorFontanelleMand">Bulging Anterior Fontanelle<font color='red'>*</font></string>
+    <string name="bulgingAnteriorFontanelleMandResult">Bulging Anterior Fontanelle</string>
+    <string name="convulsions">Select about the convulsions</string>
+    <string name="convulsionsMand">Convulsions<font color='red'>*</font></string>
+    <string name="convulsionsMandResult">Convulsions</string>
+    <string name="presentOnAdmission">Present on Admission</string>
+    <string name="pastHistory">Past History</string>
+    <string name="bleedingFromAnySite">Select about the bleeding site , accordingly</string>
+    <string name="bleedingFromAnySiteMand">Bleeding from any site<font color='red'>*</font></string>
+    <string name="bleedingFromAnySiteMandResult">Bleeding from any site</string>
+    <string name="micturitionAndBowelMovements">Micturition and Bowel Movements<font color='red'>*</font></string>
+    <string name="pleaseAskThisQuestion"><![CDATA[Please ask the below questions if the baby is admitted in the lounge for >=4 Hours.]]></string>
+    <string name="noOfTimesUrine">Please Enter how many times urine has been passed in your shift</string>
+    <string name="noOfTimesUrineMand">Urine passed in your shift<font color='red'>*</font></string>
+    <string name="noOfTimesStool">Please Enter how many times stool has been passed in your shift </string>
+    <string name="noOfTimesStoolMand">Stool passed in your shift<font color='red'>*</font></string>
+    <string name="typeOfAdmission">Type of admission<font color='red'>*</font></string>
+    <string name="typeOfOutborn">Type of outborn<font color='red'>*</font></string>
+    <string name="admittedByNurse">Admitted by nurse<font color='red'>*</font></string>
+    <string name="dutyCheckin">Duty Checkin</string>
+    <string name="dutyCheckout">Duty Checkout</string>
+    <string name="start">Start</string>
+    <string name="selectTimeOfTheDay">Select time of the day</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="errorSelectProperTime">Select Proper Time</string>
+    <string name="errorSelectDate">Select Date</string>
+    <string name="errorSelectTime">Select Time</string>
+    <string name="errorCurrentTime">Selected Time cannot be greater than Current time</string>
+    <string name="sehmatiPatr">Sehmati Patr</string>
+    <string name="clickPhotoMand">Click Photo <font color='red'>*</font></string>
+    <string name="clickPhoto">Click Photo<font color='red'>*</font></string>
+    <string name="clickPhotoSantance">Click the photo of the consent form and baby\'s footprint</string>
+    <string name="clickConsentForm">Please Click the photo of the consent form and baby\'s footprint</string>
+    <string name="logoutAlert">Are you sure you want to logout?</string>
+    <string name="deleteAlert">Are you sure to Delete this record? </string>
+    <string name="languageAlert">Are you sure you want to change language </string>
+    <string name="ears">Ears</string>
+    <string name="feet">Feet Plantar surface</string>
+    <string name="chest">Chest</string>
+    <string name="maleGenitalia">Male Genitalia</string>
+    <string name="femaleGenitalia">Female Genitalia</string>
+    <string name="skin">Skin</string>
+    <string name="skinNew">Skin Rash or Pustules</string>
+
+    <string name="ears1">Small amount of ear cartilage/ flattened pinna</string>
+    <string name="feet1">Flat sole without creases</string>
+    <string name="chest1">No breast tissue is present and the areolae are barely visible</string>
+    <string name="maleGenitalia1">Scrotum flat smooth</string>
+    <string name="femaleGenitalia1">Prominent clitoris and flat labia</string>
+
+    <string name="skin2">Increased cartilage,recoil and outer ridge curving inward</string>
+    <string name="skin2New">Gelatinuous, red, translucent/ Smooth pink, visible veins</string>
+    <string name="chest2">Flat areola no bud</string>
+    <string name="maleGenitalia2">Scrotum empty. Faint rugae</string>
+    <string name="femaleGenitalia2">Prominent clitoris and small labia minora</string>
+
+    <string name="ears3">Increased cartilage, recoil and outer ridge curving inward</string>
+    <string name="feet3">Presence of only anterior crease</string>
+    <string name="chest3">The breast tissues are less than 1 cm &#38; are pigmented</string>
+    <string name="maleGenitalia3">Testes in upper canal, rare rugae</string>
+    <string name="femaleGenitalia3">Prominent clitoris and enlarging Minora</string>
+
+    <string name="skin4">Cracking pale areas, rare veins</string>
+    <string name="chest4">Raised areola 3-4 mm bud</string>
+    <string name="maleGenitalia4">Testes down, good rugae</string>
+    <string name="femaleGenitalia4">Majora and minora equally prominent</string>
+    <string name="iMStuckPleaseHelpMe">My App/ Tab is stopped, please help me!</string>
+    <string name="learnOnMyOwn">Learn on my own</string>
+    <string name="callRegardingIssue">You\'ll receive a call regarding your issue.</string>
+    <string name="totalLiveBirths">Total live births</string>
+    <string name="totalLiveBirthsMand">Total (LBW) live births <font color='red'>*</font></string>
+    <string name="totalInfantsBetween2000To2500G">Total babies 2000 grams - 2500 grams</string>
+
+    <string name="totalInfantsBetween2000To2500GMand">Total babies 2000 grams - 2500 grams<font color='red'>*</font> </string>
+    <string name="totalInfants2000GMand"><![CDATA[Total babies < 2000 grams]]><font color='red'>*</font> </string>
+
+    <string name="totalInfants2000G"><![CDATA[Total babies < 2000 grams]]></string>
+    <string name="infantsAlreadyAvailable">Babies already admitted.</string>
+    <string name="kmcPosition">KMC Position</string>
+    <string name="date">Date</string>
+    <string name="startTime">Start time</string>
+    <string name="stopTime">Stop time</string>
+    <string name="duration">Duration</string>
+    <string name="kmcProvider">KMC Provider</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="time">Time</string>
+    <string name="noOfTimes">Times</string>
+    <string name="noOfTime">Time</string>
+    <string name="quantity">Quantity</string>
+    <string name="fluid">Fluid</string>
+    <string name="feedingMethod">Feeding Method</string>
+    <string name="startDate">Start Date</string>
+    <string name="stopDate">Stop Date</string>
+    <string name="enteredByNurse">Entered by nurse<font color='red'>*</font></string>
+    <string name="typeOfFluid">Type of fluid</string>
+    <string name="medicines">Medicines</string>
+    <string name="unit">Unit</string>
+    <string name="name">Name</string>
+    <string name="vaccines">vaccine</string>
+    <string name="test">Type of test</string>
+    <string name="investigationType">Investigation Type</string>
+    <string name="selectInvestigationType">Select Investigation Type</string>
+    <string name="selectInvestigation">Select Investigation</string>
+
+    <string name="selectDeliveryType">Delivery Type</string>
+    <string name="deliveryType1">Normal</string>
+    <string name="deliveryType2">Normal with Episiotomy</string>
+    <string name="deliveryType3">Assisted - Forceps</string>
+    <string name="deliveryType4">Assisted - Vacuum</string>
+    <string name="deliveryType5">Caesarian</string>
+
+    <string name="selectBornType">Select admission type</string>
+    <string name="errorAdmissionType">Please select the Admission type</string>
+    <string name="inborn">Inborn</string>
+    <string name="outborn">Outborn</string>
+    <string name="selectOutBornType">Select Out Born Type</string>
+    <string name="referral">Referral</string>
+    <string name="insideReferral">Inside Referral</string>
+    <string name="selectInBornType">Select Ward</string>
+    <string name="errorWard">Please select the ward in which baby was before</string>
+
+    <string name="errorGuardianName">Please enter guardian\'s name</string>
+    <string name="errorGuardianMoNumber">Please enter the phone number</string>
+    <string name="errorOrganisationName">Enter Organisation\'s Name</string>
+    <string name="errorOrganisationNumber">Enter Valid Organisation\'s Number</string>
+    <string name="errorOrganisationAddress">Enter Organisation\'s Address</string>
+    <string name="errorEnterMother">Please enter Mother\'s Name </string>
+    <string name="errorEnterFather">Enter Father\'s Name</string>
+    <string name="errorClickPic">Please Click Mother\'s Photo</string>
+    <string name="errorEnterHRN">Please Enter a valid registration number provided from the hospital</string>
+    <string name="errorEnterMMobile">Please enter a valid phone number</string>
+
+    <string name="labourRoom">Labour room</string>
+    <string name="sncu">SNCU</string>
+    <string name="pncWard">PNC Ward</string>
+    <string name="msaWard">MSA Ward</string>
+    <string name="postoprativeWard">Post Operative Ward</string>
+
+    <string name="errorClickBabyMand">Please Click baby\'s Photo<font color='red'>*</font></string>
+    <string name="errorClickBaby">Please Click baby\'s Photo</string>
+    <string name="errorSelectDelDate">Please Enter Delivery Date</string>
+    <string name="errorSelectDelTime">Please Enter Delivery Time</string>
+    <string name="errorSelectDelTimegreater">Delivery time can not be more than the current time</string>
+    <string name="errorSelectGender">Please select baby\'s Gender</string>
+    <string name="errorEnterBWeight">Please Enter baby\'s Birth Weight</string>
+    <string name="errorSelectDelType">Please select the Delivery type</string>
+    <string name="errorSelectLMPDate">Please Enter LMP Date</string>
+    <string name="errorSelectDelPlace">Select Delivery Place</string>
+    <string name="errorSelectFacPlace">Select Delivery Facility</string>
+    <string name="errorEnterDelPlace">Enter Delivery Place</string>
+    <string name="errorWeightLimit">Weight should be in between 400 and 6000 grams</string>
+    <string name="errorClickWheightImage">Please click the picture of the baby with weighing machine</string>
+    <string name="errorSelectYourName">Please select your name</string>
+    <string name="errorProperDelDate">Baby\'s Date of Birth should be greater than 24 weeks</string>
+    <string name="tutorial">Tutorial videos</string>
+    <string name="labourLine1English">Please go to the </string>
+    <string name="labourLine2English">Labor Room\n and OT </string>
+    <string name="labourLine3English">to review births.</string>
+    <string name="babiesBorn">Baby\'s born on</string>
+    <string name="between">between</string>
+    <string name="bedsAvailableLine">beds are still\navailable in the KMC Lounge.</string>
+    <string name="bedIsAvailableLine">bed is still\navailable in the KMC Lounge.</string>
+    <string name="birthLessThan"><![CDATA[Total live Birth should be the sum of the two fields]]></string>
+    <string name="press">Press</string>
+    <string name="totalbirthReviewerror">Please enter total (LBW) live births</string>
+
+    <string name="dangerSituation">Baby is in danger</string>
+    <string name="alertnessDetail">Active</string>
+    <string name="comatoseDetail">No movement on stimulation</string>
+    <string name="toneDetail">The normal level of firmness or slight contraction in a resting muscle</string>
+    <string name="centralDetail">Bluish-purple discoloration of lips, tongue and inside of the mouth</string>
+    <string name="peripheralDetail">Bluish-purple discoloration of the skin on the fingertips, toes, palms, or feet</string>
+    <string name="jaundiceDetail">Yellowish discoloration of the baby</string>
+    <string name="apneaDetail">The temporary stoppage of breathing during sleep</string>
+    <string name="gruntingDetail">Abnormal voice coming from baby\'s throat</string>
+    <string name="chestDetail">The inward movement of the Chest when the child breathes in, and is a sign of respiratory distress</string>
+    <string name="umbilicusDetail">The vestige left behind on a newborn\'s belly when the umbilical cord is cut.</string>
+    <string name="perinatalDetail">Condition resulting from deprivation of oxygen to a newborn baby that lasts long enough during the birth process to cause physical harm</string>
+    <string name="meconiumDetail">Aspiration of meconium stained amniotic fluid (MSAF) and have meconium within their lungs.</string>
+    <string name="bulgingDetail">A tense or bulging fontanelle occurs when fluid builds up in the brain or the brain swells, causing increased pressure inside the skull</string>
+
+    <string name="errorSystolic">Please Enter Proper Systolic Value</string>
+    <string name="errorDiastolic">Please Enter Proper Diastolic Value</string>
+    <string name="errorSelectUterusExam">Select Uterus Examination</string>
+    <string name="errorSpo2Empty">Please Enter SpO2 Value</string>
+    <string name="errorSpo2">SpO2 cannot be less than 20% and greater than 100%</string>
+    <string name="errorPulseEmpty">Please Enter Pulse Rate value</string>
+    <string name="errorPulse">Pulse rate cannot be less than 10 bpm and greater than 300 bpm</string>
+    <string name="errorTemp">Please enter the room temperature</string>
+    <string name="errorTempF"> Temperature cannot be less than 90\u00B0 F and greater than 107\u00B0 F</string>
+    <string name="errorTempC">Temperature cannot be less than 32.2\u00B0 and greater than 41.6\u00B0 C</string>
+    <string name="errorRespiratory">Please complete the respiratory rate first</string>
+    <string name="areYouSurePart1">Are you sure Pulse Rate is</string>
+    <string name="areYouSurePart2">"? Please check and re-evaluate"</string>
+    <string name="bpm">bpm</string>
+    <string name="errorGestWeek">Please select Gestational week</string>
+    <string name="errorAlertness">Please select the type of Alertness</string>
+    <string name="errorMuscleTone">Please select the type of Muscle tone</string>
+    <string name="errorColor">Please select the type of baby\'s body Color</string>
+    <string name="errorApnea">For Apnea, please select accordingly </string>
+    <string name="errorGrunting">For Grunting, please select accordingly</string>
+    <string name="errorChest"> For Chest Indrawing, please select accordingly</string>
+    <string name="significantFindings">Significant Findings</string>
+    <string name="theBabyNeedsToBeReferred">This baby needs to be referred </string>
+    <string name="theBabyCanBeAdmitted">This baby can be admitted</string>
+    <string name="doYouThunkBabyCanAdmitted">Do you think that this baby can be admitted and managed in this lounge with the above conditions?</string>
+    <string name="urineIn">Urine passed in your shift</string>
+    <string name="stoolIn">Stool passed in your shift</string>
+    <string name="baselineMeasurements">Baseline Measurements</string>
+    <string name="babysWeight">Baby\'s Weight (in grams) <font color='red'>*</font></string>
+    <string name="babysWeightMand">Baby\'s Weight during the time of the admission<font color='red'>*</font></string>
+    <string name="grams">grams</string>
+    <string name="headCircumference">Baby\'s Head Circumference during the time of the admission</string>
+    <string name="babysLength">Baby\'s Length during the time of the admission</string>
+    <string name="isLengthTapeAvailable">Do you have infantometer to measure the baby\'s length?</string>
+    <string name="isLengthTapeAvailableMand">Do you have infantometer to measure the baby\'s length?<font color='red'>*</font></string>
+    <string name="lengthOfBaby">Do you have the instrument to measure the length of the baby?</string>
+    <string name="lengthOfBabyMand">Length of baby (cm)<font color='red'>*</font></string>
+    <string name="cm">cm</string>
+    <string name="isHeadTapeAvailable">Do you have Measuring Tape to measure the baby\'s Head Circumference?</string>
+    <string name="isHeadTapeAvailableMand">Do you have Measuring Tape to measure the baby\'s Head Circumference?<font color='red'>*</font></string>
+    <string name="headCircumferenceCm">Please measure the Head\'s Circumference of the baby</string>
+    <string name="headCircumferenceCmMand">Head Circumference (cm)<font color='red'>*</font></string>
+    <string name="errorEnterWeight">Kindly measure the weight of the baby</string>
+    <string name="errorHead">Please measure the Head\'s Circumference of the baby</string>
+    <string name="errorLength">Please Enter Length of Baby</string>
+    <string name="referringTo">What branch are you referring the baby to?</string>
+    <string name="referringMotherTo">What branch are you referring the mother to?</string>
+    <string name="nameOfFacility">Select Facility</string>
+    <string name="facilityAddress">Facility Address</string>
+    <string name="dateOfBirth">Date of Birth:</string>
+    <string name="dateOfAdmission">Date of Admission:</string>
+    <string name="birthWeight">Birth Weight:</string>
+    <string name="currentWeight">Current Weight:</string>
+    <string name="totalBabies">Total Baby :</string>
+    <string name="totalBaby">Total Baby :</string>
+    <string name="totalMothers">Total Mothers :</string>
+    <string name="totalMother">Total Mother :</string>
+    <string name="unknown">Unknown</string>
+    <string name="babyOf">B/O</string>
+    <string name="weight">Weight</string>
+    <string name="vaccination">Vaccination</string>
+    <string name="medicine">Medicine</string>
+    <string name="feeding">Feeding</string>
+    <string name="selectProvider">Select Provider</string>
+    <string name="errorProvider">Select Provider</string>
+    <string name="errorSelectDateTime">Select Proper Date and Time</string>
+    <string name="errorSSCLastTime">Selected Time cannot be less than last entered Time</string>
+    <string name="errorStartEndDate">Start Date and Time cannot be greater than End Date and Time</string>
+    <string name="startDateAndTime">Start Time and Date</string>
+    <string name="stopDateAndTime">Stop Time and Date</string>
+
+
+    <string name="selectFluid">What was fed</string>
+    <string name="selectFeeding">Select Method</string>
+    <string name="breast">Direct breastfeeding</string>
+    <string name="spoon">Spoon/ Palladai</string>
+    <string name="ogTube">OG Tube</string>
+    <string name="ivDrip">IV Drip</string>
+    <string name="motherOwnMilk">Mother\'s own milk</string>
+    <string name="otherHumanMilk">Other Human Milk</string>
+    <string name="formulaMilk">Formula Milk</string>
+    <string name="animalMilk">Animal Milk</string>
+    <string name="ivFluid">IV fluid</string>
+    <string name="ebf">Expressed Breast Milk Feeding</string>
+    <string name="formula">Formula</string>
+    <string name="errorSelectType">Select Feeding Type</string>
+    <string name="errorSelectMethod">Select Feeding Method</string>
+    <string name="errorSelectFluid">Select what was fed</string>
+    <string name="errorSelectInvesType">Select Investigation Type</string>
+    <string name="errorSelectInvesMethod">Select Investigation Method</string>
+    <string name="errorEnterDuration">Enter Duration</string>
+    <string name="errorEnterQuantity">Enter Quantity</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="investigation">Investigation</string>
+    <string name="doctorRound">Doctor Round</string>
+    <string name="treatment">Treatment</string>
+    <string name="selectDoctor">Select Doctor</string>
+    <string name="errorselectDoctor">Please select the doctor</string>
+    <string name="pleaseSpecify">Please specify</string>
+
+    <string name="bloodnvestigationsValue" translatable="false">Blood Investigations</string>
+    <string name="serumValue" translatable="false">Serum In-Vitro Tests</string>
+    <string name="imagingValue" translatable="false">Imaging Tests</string>
+    <string name="miscellaneousTestsValue" translatable="false">Miscellaneous Tests</string>
+
+    <string name="bloodnvestigations">Blood Investigations</string>
+    <string name="serum">Serum In-Vitro Tests</string>
+    <string name="imaging">Imaging Tests</string>
+    <string name="miscellaneousTests">Miscellaneous Tests</string>
+
+    <string name="hb">Hb</string>
+    <string name="pcv">PCV</string>
+    <string name="wbc">Total WBC Count</string>
+    <string name="diffWbc">Differential WBC Count</string>
+    <string name="bandForm">Band Form/ I.T. Ratio</string>
+    <string name="plateletCount">Platelet Count</string>
+    <string name="periSmear">Peripheral Smear</string>
+    <string name="pt">PT/ PTTK/ FDP</string>
+    <string name="crp">CRP</string>
+    <string name="rbg">Random Blood Glucose</string>
+    <string name="bun">Blood Urea Nitrogen</string>
+    <string name="serumCreatioine">Serum Creatioine</string>
+    <string name="serumCalcium">Serum Calcium</string>
+    <string name="serumSodium">Serum Sodium</string>
+    <string name="serumPotassium">Serum Potassium</string>
+    <string name="serumBilirubin">Serum Bilirubin: Total/ Indirect/ Direct</string>
+    <string name="sgpt">SGPT</string>
+    <string name="totalProtein">Total Protein/ Ser. Albumin</string>
+    <string name="urineRnM">Urine R&amp;M</string>
+    <string name="stoolForOccultBlood">Stool for occult blood</string>
+    <string name="bloodGas">Blood Gas: Arterial/ Venous</string>
+    <string name="csf">C.S.F.</string>
+    <string name="urineCulture">Urine Culture</string>
+    <string name="bloodCulture">Blood Culture</string>
+    <string name="xRay">X-Ray</string>
+    <string name="usg">USG</string>
+    <string name="ctMRI">CT/ MRI</string>
+    <string name="bloodSugar">Blood Sugar</string>
+    <string name="bloodCollection">Blood Collection</string>
+    <string name="comment">Comment</string>
+    <string name="clickNotePhoto">Click note photo</string>
+    <string name="clickPhotoOfNote">Click photo of note (if any)</string>
+    <string name="errorTreatment">Enter Treatment</string>
+    <string name="selectTreatment">Select Treatment</string>
+    <string name="addMore">Do you want to Add More?</string>
+    <string name="ml">ml</string>
+    <string name="drops">Drops</string>
+    <string name="selectUnit">Select Unit</string>
+    <string name="selectVaccination">Select Vaccination</string>
+    <string name="koHindi">को</string>
+
+
+    <!-- 0 weeks -->
+    <string name="bcg">BCG</string>
+    <string name="opv0">OPV 0</string>
+    <string name="hepB1">Hep-B 1</string>
+
+    <!-- 6 weeks -->
+    <string name="dtwP1">DTwP 1</string>
+    <string name="ipv1">IPV 1</string>
+    <string name="hepB2">Hep-B 2</string>
+    <string name="hib1">Hib 1</string>
+    <string name="rotavirus1">Rotavirus 1</string>
+    <string name="pcv1">PCV 1</string>
+
+    <!-- 10 weeks -->
+    <string name="dtwp2">DTwP 2</string>
+    <string name="ipv2">IPV 2</string>
+    <string name="hib2">Hib 2</string>
+    <string name="rotavirus2">Rotavirus 2</string>
+    <string name="pcv2">PCV 2</string>
+
+    <!-- 14 weeks -->
+    <string name="dtwp3">DTwP 3</string>
+    <string name="ipv3">IPV 3</string>
+    <string name="hib3">Hib 3</string>
+    <string name="rotavirus3">Rotavirus 3</string>
+    <string name="pcv3">PCV 3</string>
+
+    <!-- 6 months i.e. 26 weeks -->
+    <string name="opv1">OPV 1</string>
+    <string name="hep_b3">Hep-B 3</string>
+
+    <!-- 9 months  i.e. 39 weeks-->
+    <string name="opv2">OPV 2</string>
+    <string name="mmr_1">MMR-1 </string>
+
+    <!-- 9-12 months  i.e. 39 - 52 weeks-->
+    <string name="typhoid">Typhoid</string>
+    <string name="conjugateVaccine">Conjugate Vaccine</string>
+
+    <!-- 12 months i.e. 52 weeks-->
+    <string name="hep_a1">Hep-A 1</string>
+
+    <!-- 15 months i.e. 65 weeks-->
+    <string name="mmr_2">MMR  2</string>
+    <string name="varicella1">Varicella 1</string>
+    <string name="pcvBooster">PCV booster </string>
+
+    <!-- 16 -18 months i.e. 69.5 - 78.2 weeks-->
+    <string name="dtwpB1_dtapB1">DTwP  B1/DTaP  B1</string>
+    <string name="ipvb1_hibb1">IPV B1, Hib B1</string>
+
+    <!-- 18 months - 2 years i.e. 78.2 - 104 weeks-->
+    <string name="hep_a2">Hep-A 2</string>
+    <string name="typhoidBooster">Typhoid booster </string>
+
+    <!-- 4 years - 6 years  i.e. 208 - 313 weeks -->
+    <string name="dtwpB2_dtapB2">DTwP B2/DTaP B2</string>
+    <string name="opv3Varicella2">OPV 3 Varicella 2</string>
+    <string name="typhoidBooster4Year">Typhoid booster</string>
+
+    <!-- 10 years - 12 years  i.e. 521 - 625 weeks-->
+    <string name="tdap_td">Tdap/Td</string>
+    <string name="hpv">HPV </string>
+
+    <!-- 0 weeks -->
+    <string name="bcgValue" translatable="false">BCG</string>
+    <string name="opv0Value" translatable="false">OPV 0</string>
+    <string name="hepB1Value" translatable="false">Hep-B 1</string>
+
+    <!-- 6 weeks -->
+    <string name="dtwP1Value" translatable="false">DTwP 1</string>
+    <string name="ipv1Value" translatable="false">IPV 1</string>
+    <string name="hepB2Value" translatable="false">Hep-B 2</string>
+    <string name="hib1Value" translatable="false">Hib 1</string>
+    <string name="rotavirus1Value" translatable="false">Rotavirus 1</string>
+    <string name="pcv1Value" translatable="false">PCV 1</string>
+
+    <!-- 10 weeks -->
+    <string name="dtwp2Value" translatable="false">DTwP 2</string>
+    <string name="ipv2Value" translatable="false">IPV 2</string>
+    <string name="hib2Value" translatable="false">Hib 2</string>
+    <string name="rotavirus2Value" translatable="false">Rotavirus 2</string>
+    <string name="pcv2Value" translatable="false">PCV 2</string>
+
+    <!-- 14 weeks -->
+    <string name="dtwp3Value" translatable="false">DTwP 3</string>
+    <string name="ipv3Value" translatable="false">IPV 3</string>
+    <string name="hib3Value" translatable="false">Hib 3</string>
+    <string name="rotavirus3Value" translatable="false">Rotavirus 3</string>
+    <string name="pcv3Value" translatable="false">PCV 3</string>
+
+    <!-- 6 months i.e. 26 weeks -->
+    <string name="opv1Value" translatable="false">OPV 1</string>
+    <string name="hep_b3Value" translatable="false">Hep-B 3</string>
+
+    <!-- 9 months  i.e. 39 weeks-->
+    <string name="opv2Value" translatable="false">OPV 2</string>
+    <string name="mmr_1Value" translatable="false">MMR-1 </string>
+
+    <!-- 9-12 months  i.e. 39 - 52 weeks-->
+    <string name="typhoidValue" translatable="false">Typhoid</string>
+    <string name="conjugateVaccineValue" translatable="false">Conjugate Vaccine</string>
+
+    <!-- 12 months i.e. 52 weeks-->
+    <string name="hep_a1Value" translatable="false">Hep-A 1</string>
+
+    <!-- 15 months i.e. 65 weeks-->
+    <string name="mmr_2Value" translatable="false">MMR  2</string>
+    <string name="varicella1Value" translatable="false">Varicella 1</string>
+    <string name="pcvBoosterValue" translatable="false">PCV booster </string>
+
+    <!-- 16 -18 months i.e. 69.5 - 78.2 weeks-->
+    <string name="dtwpB1_dtapB1Value" translatable="false">DTwP  B1/DTaP  B1</string>
+    <string name="ipvb1_hibb1Value" translatable="false">IPV B1, Hib B1</string>
+
+    <!-- 18 months - 2 years i.e. 78.2 - 104 weeks-->
+    <string name="hep_a2Value" translatable="false">Hep-A 2</string>
+    <string name="typhoidBoosterValue" translatable="false">Typhoid booster </string>
+
+    <!-- 4 years - 6 years  i.e. 208 - 313 weeks -->
+    <string name="dtwpB2_dtapB2Value" translatable="false">DTwP B2/DTaP B2</string>
+    <string name="opv3Varicella2Value" translatable="false">OPV 3 Varicella 2</string>
+    <string name="typhoidBooster4YearValue" translatable="false">Typhoid booster</string>
+
+    <!-- 10 years - 12 years  i.e. 521 - 625 weeks-->
+    <string name="tdap_tdValue" translatable="false">Tdap/Td</string>
+    <string name="hpvValue" translatable="false">HPV </string>
+
+
+    <string name="today">Today</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="since8AM">(since 8:00 am shift)</string>
+    <string name="babyWeight">Baby\'s weight (in grams) </string>
+    <string name="assessmentBy">Assessment by</string>
+    <string name="routineAssessment">Routine Assessment</string>
+    <string name="tests">Tests</string>
+    <string name="babyStatus">Baby\'s status</string>
+    <string name="testName">Test Name</string>
+    <string name="sampleCollectionStatus">Sample collection status</string>
+    <string name="reportStatus">Report Status</string>
+    <string name="sampleSubmitted">Sample collected on</string>
+    <string name="resultSubmitted">Result collected on</string>
+    <string name="enterResult">Enter Result</string>
+    <string name="result">Result</string>
+    <string name="submitSample">Submit Sample</string>
+    <string name="submitResult">Submit Result</string>
+    <string name="viewReport">View Report</string>
+    <string name="viewImage">View Image</string>
+    <string name="details">Details</string>
+    <string name="weighTheBaby">Weigh the baby</string>
+    <string name="clickBabiesPictureWithWeighingMachine">Click baby\'s Picture with Weighing Machine</string>
+    <string name="lastMonitoring">Last Monitoring is incomplete.Do you want to restart?</string>
+    <string name="lastKMCMonitoring">Last KMC is incomplete.Do you want to restart?</string>
+    <string name="lastFeedMonitoring">Last Feeding is incomplete.Do you want to restart?</string>
+    <string name="startNew">Start New</string>
+    <string name="pleaseEnsure">Please ensure</string>
+    <string name="ensure1">Lounge services are updated.</string>
+    <string name="ensure2">All baby\' &amp; mothers\' assessment due during your shift are completed.</string>
+    <string name="ensure3">Babies have been given prescribed dosage  (if any) of medicines.</string>
+    <string name="ensure4">Tests ordered by doctor  (if any) have been sent to the lab.</string>
+    <string name="ensure5">All baby\' and mothers\' case records are completed.</string>
+    <string name="pleaseInform">Please inform the mother that following checkups will be done on her.</string>
+    <string name="soThatExamine">So that you can examine that, there are no danger signs noticeable in the mother, take consent of mother before examination. </string>
+    <string name="bloodPressure">Blood Pressure</string>
+    <string name="uterusExamination">Uterus Examination</string>
+    <string name="checkEpisiotomyStitches">Check episiotomy stitches</string>
+    <string name="otherObservation">Other observation</string>
+    <string name="motherBloodPressure">Take mother\'s Blood Pressure and Pulse Rate</string>
+    <string name="mmHg">mm Hg</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="systolic">Systolic</string>
+    <string name="motherUterineTone">Mother\'s uterine tone</string>
+    <string name="hard">Hard/collapsed (Contracted)</string>
+    <string name="softRelaxed">Soft (Relaxed)</string>
+    <string name="axillaryTemperature">Enter the Body temperature of Mother</string>
+    <string name="otherObservationComments">Other observation/ comments</string>
+    <string name="normalDischarge">Normal Discharge</string>
+    <string name="exceptionalDischarge">Exceptional Discharge/ Exit</string>
+    <string name="dischargeCriteria1">The baby has been assessed at least once today.</string>
+    <string name="dischargeCriteria2">The baby\'s weight has increased by >= 15 g/ day from last 3 days.</string>
+    <string name="dischargeCriteria3">The baby has no danger sign for last 3 days.</string>
+    <string name="dischargeCriteria4">The baby is being fed through spoon or directly breastfeed for last 3 days.</string>
+    <string name="dischargeCriteria5">All immunizations due are complete.</string>
+    <string name="errorWeightTaken">Weight already taken</string>
+    <string name="theInfant"> </string>
+    <string name="eligible"> the baby is eligible</string>
+    <string name="forNormalDischarge">for normal discharge.</string>
+    <string name="notEligible">the baby is not eligible for discharge.</string>
+    <string name="asPerCriteria">As per the Discharge criteria,</string>
+    <string name="sureToDischarge">Are you sure you want to discharge the baby?</string>
+    <string name="sureToDischargeMother">Are you sure you want to discharge the mother?</string>
+    <string name="reasonForDischarge">Reason for discharge <font color='red'>*</font></string>
+    <string name="discharge1">Referral</string>
+    <string name="discharge2">LAMA</string>
+    <string name="discharge3">DOPR</string>
+    <string name="discharge4">Doctor\'s discretion</string>
+    <string name="discharge5">Absconded</string>
+    <string name="discharge6">Died</string>
+    <string name="discharge7">Normal Discharge</string>
+    <string name="errorsufficientlyTrained">Is the mother/ family sufficiently trained and prepared to maintain the KMC Chain at home after discharge?</string>
+    <string name="sufficientlyTrained">Is the mother/ family sufficiently trained and prepared to maintain the KMC Chain at home after discharge?<font color='red'>*</font></string>
+    <string name="motherSufficientlyTrained">Are you sufficiently trained and prepared to maintain the KMC Chain at home after discharge?</string>
+    <string name="motherAlsoLeaving">Is mother also leaving with the baby?<font color='red'>*</font></string>
+    <string name="errormotherAlsoLeaving">Is mother also leaving with the baby?</string>
+    <string name="dischargeNotes">Discharge notes <font color='red'>*</font></string>
+    <string name="idOfGuardian">Id of Guardian</string>
+    <string name="handoverPicture">Please click a photo of a baby handover</string>
+    <string name="transportation">Transportation <font color='red'>*</font></string>
+    <string name="nurseSignature">Nurse\'s Signature <font color='red'>*</font></string>
+    <string name="errornurseSignature">Kindly do your Signature (Nurse\'s Signature)</string>
+    <string name="specify">Specify <font color='red'>*</font></string>
+    <string name="selectTransportation">Please select Transportation</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="privateTransportation">Private</string>
+    <string name="motherAlsoSend">Is the mother also being sent with the baby? <font color='red'>*</font></string>
+    <string name="errormotherAlsoSend">Is the mother also being sent with the baby?</string>
+
+    <string name="consentNote">Consent Note</string>
+    <string name="consent">Please ask the mother/ family members to write a Consent note according to the below template.</string>
+    <string name="nameOfAttendant">Name of Guardian\'s </string>
+    <string name="verification">Verification</string>
+    <string name="infantNotReady">This baby is not ready for discharge as per discharge criteria. However, the family is requesting for early discharge. After assessment, I am reasonably assured that baby\'s condition is stable and can be managed by the family at home.</string>
+    <string name="motherNotReady">This mother is not ready for discharge as per discharge criteria.However, due to special circumstances, the mother is being discharged early based on my discretion. After assessment, I am reasonably assured that mother\'s condition is stable and can be managed by the family at home.</string>
+    <string name="reasonForEarlyDischarge">Reason for early discharge<font color='red'>*</font></string>
+    <string name="familyAbsconded">Are you sure that the mother/ family member has absconded along with the baby?</string>
+    <string name="notifyPolice">(If yes, then please notify the police.)</string>
+    <string name="bodyGivenToRelative">Has the baby\'s body been handed over to the gaurdian?<font color='red'>*</font></string>
+    <string name="errorbodyGivenToRelative">Has the baby\'s body been handed over to the gaurdian?</string>
+    <string name="motherBodyGivenToRelative">Has the baby\'s body been handed over to the gaurdian?</string>
+    <string name="enterAttendantName">Enter name of attendant</string>
+    <string name="errorDischargeNotes">Please enter the discharge note</string>
+    <string name="photoOfConsentNote">Click the photo of the Consent form<font color='red'>*</font></string>
+    <string name="photoOfConsentNotewA">Click the photo of the Consent form</string>
+
+    <string name="errorphotoOfConsentNote">Please Click the photo of the consent form</string>
+
+    <string name="kmcPositionDuringDischarge">Please try to ensure that the baby is in ambulatory KMC Position during discharge.</string>
+    <string name="consentdata"> मैं बच्चे को अपनी मर्ज़ी से ले जा रहा/ रही हूँ |
+अस्पताल के किसी डॉक्टर/ कर्मचारी से मुझे
+कोई शिकायत नहीं है| ले जाने के  बाद शिशु के
+परिणाम की समस्त ज़िम्मेदारी मेरी है |
+    \n\nहस्ताक्षर
+    \nदिनांक </string>
+
+    <string name="caseSheet">Case Sheet</string>
+    <string name="graphs">Graphs</string>
+    <string name="kmcPositionDuration">KMC Position Duration</string>
+    <string name="prescribed">Prescribed:</string>
+    <string name="received">Received:</string>
+    <string name="medication">Medication</string>
+    <string name="vitaminDSyrup">Vitamin D Syrup</string>
+    <string name="vaccinationStatus">Vaccination status:</string>
+    <string name="complete">Complete</string>
+    <string name="dailyWeighing">Daily Weighing</string>
+    <string name="ordered">Ordered</string>
+    <string name="sampleCollected">Sample collected</string>
+    <string name="reportAvail">Report available?</string>
+    <string name="counselling">Counselling</string>
+    <string name="kmcMonitoring">KMC Monitoring</string>
+    <string name="kmcNutrition">KMC Nutrition</string>
+    <string name="kmcRespect">KMC Respect</string>
+    <string name="kmcHygiene">KMC Hygiene</string>
+    <string name="kmcWhatis">What is KMC?</string>
+    <string name="docotorNotes">Doctor\'s comment</string>
+    <string name="theBabyHasNotWeighed">The baby has not been weighed for more than 24 hours.</string>
+    <string name="pleaseWeighTheBaby">Please weigh the baby as soon as possible.</string>
+    <string name="weightChangeFromBirth">Weight change from birth weight</string>
+    <string name="weightChangeFromPrevious">Weight change from previous weight</string>
+    <string name="infantsCurrentGrowthStatus">Baby\'s current growth status is</string>
+    <string name="sheHeIsNotGrowingOptimally">she/ he is not growing optimally.</string>
+    <string name="analysis">Analysis</string>
+    <string name="exclusiveBreastfeeding">Exclusive breastfeeding</string>
+    <string name="twoHundredMl">200 ml</string>
+    <string name="tweleveTimes">12 times</string>
+    <string name="tenTimes">10 times</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="growthMonitoring">Growth Monitoring</string>
+    <string name="respiratoryRateTemperature">Respiratory Rate &amp; Temperature Monitoring</string>
+    <string name="pulseOxidation">Pulse Oxidation Monitoring</string>
+    <string name="pulseRateSemiColumn">Pulse Rate:</string>
+    <string name="hardCollapsed">Hard/ Collapsed (Contracted)</string>
+    <string name="uterus">Uterus Examination</string>
+    <string name="admissions">Admissions</string>
+    <string name="total">Total</string>
+    <string name="infantStatus">Baby\'s Status</string>
+    <string name="weightGain">Weight gain</string>
+    <string name="durationOfKmcPosition">Duration of KMC Position</string>
+    <string name="infantsWeighedDaily">Baby weighed daily</string>
+    <string name="infantReceivingTimely">Baby receiving timely assessment</string>
+    <string name="dischargeCriteriaMet">Discharge criteria met</string>
+    <string name="staff">Staff</string>
+    <string name="onTimeDutySignin">On-time duty check-in</string>
+    <string name="oneDoctorRound">1 doctor(s) round/ day</string>
+    <string name="fluids">Fluids</string>
+    <string name="modeOfFeeding">Mode of feeding</string>
+    <string name="totalQuantity">Total Qty</string>
+    <string name="frequency">Freq</string>
+    <string name="lastAssessment">Last Assessment</string>
+    <string name="newRegis">Do you want to add a new Child?</string>
+    <string name="admit">Admit Mother</string>
+    <string name="addSibling">Add Sibling</string>
+    <string name="sureToAdmit">Are you sure you want to admit mother ?</string>
+    <string name="motherAdmitted">Mother has been admitted successfully</string>
+    <string name="selectToSearch">Select to search record</string>
+    <string name="reAdmit">Re-admit</string>
+    <string name="lastLounge">Last Lounge</string>
+    <string name="dischargeByDoctor">Discharge By Doctor</string>
+    <string name="admissionDate">Date of admission</string>
+    <string name="currentLounge">Current Lounge</string>
+    <string name="dischargeDate">Discharge Date</string>
+    <string name="every2hours">in every 2 hours)</string>
+    <string name="_21Hours">21 hours</string>
+    <string name="infantHasGained">baby has gained</string>
+    <string name="infantHasLoss">baby has lost</string>
+    <string name="sincePreviousWeight">since previous weight</string>
+    <string name="sinceBirthWeight">since birth</string>
+    <string name="bpmYAxis">bpm</string>
+    <string name="tempYAxis">temperature</string>
+    <string name="rpmYAxis">rpm</string>
+    <string name="age">age</string>
+    <string name="mlYAxis">ml</string>
+    <string name="spo2YAxis">spo2</string>
+    <string name="addNote">Add Note</string>
+    <string name="errorComments">Enter Comments</string>
+    <string name="sampleComment">Sample Comment</string>
+    <string name="confirmCounsellingPosition">Are you sure KMC Position counselling is done?</string>
+    <string name="confirmCounsellingMonitoring">Are you sure KMC Monitoring counselling is done?</string>
+    <string name="confirmCounsellingNutrition">Are you sure KMC Nutrition counselling is done?</string>
+    <string name="confirmCounsellingRespect">Are you sure KMC Respect counselling is done?</string>
+    <string name="confirmCounsellingHygiene">Are you sure KMC Hygiene counselling is done?</string>
+    <string name="totalInfants"><![CDATA[Total babies < 2000 grams is/are]]></string>
+    <string name="totalInfantsIs"><![CDATA[Total babies < 2000 grams is/are]]></string>
+    <string name="butOnly">but Only</string>
+    <string name="haveBeenAdmitted">have been admitted.</string>
+    <string name="haveNotBeenAdmitted">have been admitted.</string>
+    <string name="changePassword">Change Password</string>
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="enterNewPassword">Enter New Password</string>
+    <string name="enterConfirmPassword">Enter Confirm Password</string>
+    <string name="passwordNotMatched">New Password and Confirm Password does not matched</string>
+    <string name="_2500_2000_g">2000-2500 g =</string>
+    <string name="_2000_g"><![CDATA[ <2000 g =]]></string>
+    <string name="basicInformation">Basic Information</string>
+    <string name="contactInformation">Contact Information</string>
+    <string name="fatherNameMand">Father Name<font color='red'>*</font></string>
+    <string name="motherAadhaarNumberMand">Mother\'s Aadhaar Number</string>
+    <string name="fatherAadhaarNumberMand">Father\'s Aadhaar Number</string>
+    <string name="mctsNumber">MCTS Number</string>
+    <string name="mothersWeightInKgs">Mother\'s Weight (in Kgs)<font color='red'>*</font></string>
+    <string name="motherDob">Mother Dob<font color='red'>*</font></string>
+    <string name="motherAgeDobNotKnown">Mother\'s Age (in case DOB not known)</string>
+    <string name="ageAtMarriageInYears">Age at Marriage (in Years) <font color='red'>*</font></string>
+    <string name="mothersEducation">Mother\'s Education <font color='red'>*</font></string>
+    <string name="caste">Caste<font color='red'>*</font></string>
+    <string name="religion">Religion<font color='red'>*</font></string>
+    <string name="multipleBirths">Have you ever had multiple births? <font color='red'>*</font></string>
+    <string name="errorBirthNo">No.of birth + No. of miscarriage should be equal to No. of Pregnancies</string>
+    <string name="errorBirthYes">No.of birth + No. of miscarriage should be greater than No. of Pregnancies</string>
+    <string name="errorLiveBirth">No.of child alive cannot be greater than no of births</string>
+    <string name="totalPregnancies">Total Pregnancies? (Gravida) <font color='red'>*</font></string>
+    <string name="errorTotalPreg">Enter Total Pregnancies (Gravida)</string>
+    <string name="errorTotalBirth">Enter Total No. of Births (Para)</string>
+    <string name="errorTotalMis">Enter No. of miscarriage or abortion (Abortion)</string>
+    <string name="errorTotalChild">Enter Total no. of children alive (Live)</string>
+    <string name="nOfBirths">No. of births? (Para) <font color='red'>*</font></string>
+    <string name="nOfMiscarriage">No. of miscarriage or abortion (Abortion) <font color='red'>*</font></string>
+    <string name="totalNoOfChildren">Total no. of children who are currently alive? (Live) <font color='red'>*</font></string>
+    <string name="birthSpacing">Birth Spacing <font color='red'>*</font></string>
+    <string name="motherPhoneNumber">Mother\'s Mobile Number <font color='red'>*</font></string>
+    <string name="fatherName">Father\'s Name <font color='red'>*</font></string>
+    <string name="fatherMobileNumber">Father\'s Mobile Number <font color='red'>*</font></string>
+    <string name="familyRationCardType">Family Ration Card Type <font color='red'>*</font></string>
+    <string name="selectRationCard">Select Ration Card</string>
+    <string name="bpl">BPL (Yellow Ration Card)</string>
+    <string name="apl">APL (White Ration Card)</string>
+    <string name="arc">Antyodaya Ration Card (Red Ration Card)</string>
+    <string name="noRation">No Ration Card</string>
+    <string name="guardianName">Guardian\'s Name</string>
+    <string name="guardianMoNumberMand">Guardian\'s Mobile Number <font color='red'>*</font></string>
+    <string name="guardianMoNumber">Guardian\'s Mobile Number</string>
+    <string name="presentAddressType">Present Address Type <font color='red'>*</font></string>
+    <string name="urban">Urban</string>
+    <string name="rural">Rural</string>
+    <string name="presentAddress">Present Address</string>
+    <string name="hamletStreetOrLocality">Hamlet/Street or Locality <font color='red'>*</font></string>
+    <string name="gramSabhaTownOrCity">Gram Sabha/Town or City <font color='red'>*</font></string>
+    <string name="block">Block <font color='red'>*</font></string>
+    <string name="gram">Gram <font color='red'>*</font></string>
+    <string name="district">District <font color='red'>*</font></string>
+    <string name="permanentAddressType">Permanent Address Type <font color='red'>*</font></string>
+    <string name="permanentAddress">Permanent Address</string>
+    <string name="country">Country<font color='red'>*</font></string>
+    <string name="state">State<font color='red'>*</font></string>
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="nearByLocation">Near by location</string>
+    <string name="sameAddress">Permanent address same as present address<font color='red'>*</font></string>
+    <string name="selectReligion">Select Religion</string>
+    <string name="selectSpacing">Select Birth Spacing</string>
+    <string name="selectCaste">Select Caste </string>
+    <string name="hindu">Hindu</string>
+    <string name="muslim">Muslim</string>
+    <string name="sikh">Sikh</string>
+    <string name="isai">Isai</string>
+    <string name="buddhism">Buddhism</string>
+    <string name="general">General</string>
+    <string name="obc">OBC</string>
+    <string name="sc">SC</string>
+    <string name="st">ST</string>
+    <string name="edu1">Uneducated</string>
+    <string name="edu2">Less Than Fifth Grade</string>
+    <string name="edu3">Fifth Grade Pass</string>
+    <string name="edu4">Eight Grade Pass</string>
+    <string name="edu5">High School Pass</string>
+    <string name="edu6">Inter Pass</string>
+    <string name="edu7">Polytechnic - Diploma Pass</string>
+    <string name="edu8">Graduate</string>
+    <string name="edu9">Postgraduate</string>
+    <string name="edu10">PHD</string>
+    <string name="selectEducation">Select Education</string>
+    <string name="spacing1">Less than 1 Yr</string>
+    <string name="spacing2">1-2 Yr</string>
+    <string name="spacing3">Greater than 2-3 Yr</string>
+    <string name="spacing4">Greater than 3 Yr</string>
+    <string name="notApplicable">Not Applicable</string>
+    <string name="selectCountry">Select Country</string>
+    <string name="selectState">Select State</string>
+    <string name="selectBlock">Select Block</string>
+    <string name="selectGram">Select Gram</string>
+    <string name="selectMajra">Select Majra</string>
+    <string name="india">India</string>
+    <string name="uttarPradesh">Uttar Pradesh</string>
+    <string name="butNone">but none of them</string>
+    <string name="edd">Estimated date of delivery<font color='red'>*</font></string>
+    <string name="placeOfBirth">Place of birth<font color='red'>*</font></string>
+    <string name="facilityType">Facility type</string>
+    <string name="placeOfDelivery">Place of delivery<font color='red'>*</font></string>
+    <string name="enterHospitalName">Enter hospital name</string>
+    <string name="selectPlaceOfBirth">Select place of birth</string>
+    <string name="placeOfBirthOption1">At home</string>
+    <string name="placeOfBirthOption2">On the way</string>
+    <string name="hospital">Hospital</string>
+    <string name="profile">Profile</string>
+    <string name="motherDischargeSuccessfullt">Mother has been discharged successfully</string>
+    <string name="or">or</string>
+    <string name="internet">Could not connect to the internet, please check your network.</string>
+    <string name="online">You are connect to the internet right now.</string>
+    <string name="copyright">Copyright &#169; 2020 - All rights reserved CEL.</string>
+    <string name="HowAreYou">How are you</string>
+    <string name="happy">I\'m Happy</string>
+    <string name="fine">Average</string>
+    <string name="notfeelinggood">I\'m Not Happy</string>
+    <string name="feeling">feeling</string>
+    <string name="todaynurse">Today?</string>
+    <string name="feelingError">How are you feeling Today?</string>
+    <string name="loginAsCoach">Login as Coach</string>
+    <string name="loginAsLounge">Login as Lounge</string>
+    <string name="mobileNumber">Mobile number</string>
+    <string name="errorContactNumber">Enter Valid Mobile Number</string>
+    <string name="days">days</string>
+    <string name="kgPerDay">kg/ day</string>
+    <string name="hoursPerDay">hours/ day</string>
+    <string name="dischargeError">Kindly sync data before doing Discharge</string>
+    <string name="whichWard">In which ward was the baby before? <font color='red'>*</font> </string>
+    <string name="referringHospital">Please enter the birth place of the baby </string>
+    <string name="referringHospitalMand">Enter the birth place of the baby<font color='red'>*</font> </string>
+    <string name="ppeIsAvailable">PPE (Personal Protective Equipment) is available for visitors outside the lounge.</string>
+
+
+    <string name="errorEnterMAadhar">Enter Valid Aadhar Number</string>
+    <string name="errorLogout">You have been  successfully Logged out from the lounge</string>
+    <string name="errorEnterFAadhar">Enter Valid Aadhar Number</string>
+    <string name="errorEnterMCTS">Enter MCTS Number</string>
+    <string name="errorEnterAge">Select Date Of Birth or Enter Age</string>
+    <string name="enterAge">Age cannot be less than 14 years &amp; greater than 61 years</string>
+    <string name="errorSelectEducation">Select Mother\'s Education</string>
+    <string name="errorSelectReligion">Select Religion</string>
+    <string name="errorSelectCaste">Select Caste</string>
+    <string name="errorEnterFMobile">Enter Father\'s Mobile Number</string>
+    <string name="errorSelectPreAddType">Select Present Address Type</string>
+    <string name="errorSelectPreDis">Select Present Address District</string>
+    <string name="errorSelectPreBlock">Select Present Address Block</string>
+    <string name="errorSelectPreGram">Select Present Address Gram/City</string>
+    <string name="errorEnterPreAdd">Enter Present Address</string>
+    <string name="errorEnterPreNear">Enter Present Near By Location</string>
+    <string name="errorSelectPerAddType">Select Permanent Address Type</string>
+    <string name="errorSelectPerDis">Select Permanent Address District</string>
+    <string name="errorSelectPerBlock">Select Permanent Address Block</string>
+    <string name="errorSelectPerGram">Select Permanent Address Gram/City</string>
+    <string name="errorEnterPerAdd">Enter Permanent Address</string>
+    <string name="errorEnterPerNear">Enter Permanent Near By Location</string>
+    <string name="errorSameAadhar">Aadhar Number cannot be same for Both</string>
+    <string name="errorMotherWeight">Enter Mother\'s Weight</string>
+    <string name="errorMotherMarAge">Enter Mother\'s Age at Marriage</string>
+    <string name="countryName">Select Country</string>
+    <string name="stateName">Select State</string>
+    <string name="reasonMand">Reason<font color='red'>*</font></string>
+    <string name="measuringTapeNotAvailable">Measuring Tape is not Available.</string>
+    <string name="dontKnowMeasuremnt">Don\'t know how to take the measurement</string>
+    <string name="motherDidntAllowMeasuremnt">Mother didn\'t allowed to take the measurement</string>
+    <string name="selectReasonNotMeasurLength">Please select the reason</string>
+    <string name="enterReasonNotMeasurLength">Enter Reason for not Measuring the baby\'s  Length</string>
+    <string name="selectReasonNotMeasurHead">Please select the reason</string>
+    <string name="enterReasonNotMeasurHead">Enter Reason for not Measuring the head circumference</string>
+    <string name="areYouSureTreatmentDelete">Are you sure you want to delete the treatment?</string>
+    <string name="areYouSureInvestigationDelete">Are you sure you want to delete the investigation?</string>
+    <string name="alreadySynced">Already synced</string>
+    <string name="totalComments">Total comments</string>
+    <string name="areYouSureWantDeleteComment">Are you sure you want to delete the comment?</string>
+    <string name="viewDetails">View Details</string>
+    <string name="successfullyCheckedOut">Successfully checked out</string>
+    <string name="loginAttemptsLeft4">4 login attempts left</string>
+    <string name="loginAttemptsLeft3">3 login attempts left</string>
+    <string name="loginAttemptsLeft2">2 login attempts left</string>
+    <string name="loginAttemptsLeft1">1 login attempts left</string>
+    <string name="loginIn10Minutes">Try again in 10 minutes</string>
+    <string name="tryAgainIn">Try again in</string>
+    <string name="minutes">minutes</string>
+    <string name="pleaseLocateOtherInfantCounselling">Please locate other baby/s for counselling and admission.</string>
+    <string name="noBedsAvailable">No beds available</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="scoreBoard">Score Board</string>
+    <string name="facilityOverView">Facility Overview</string>
+    <string name="kmcPerformance">KMC Performance</string>
+    <string name="upKeepOfKmcLounge">Upkeep of KMC ounge</string>
+    <string name="ranking">Ranking</string>
+    <string name="statee">State</string>
+    <string name="division">Division</string>
+    <string name="overallRating">Overall Rating</string>
+    <string name="upkeepOfMaintenanceKmcLounge"><![CDATA[Upkeep & Maintenance of KMC Lounge]]></string>
+    <string name="userExperience">User Experiance</string>
+    <string name="stateRanking">State Ranking</string>
+    <string name="loungeName">Lounge Name</string>
+    <string name="searchLounge">Search Lounge</string>
+    <string name="functionalityOfEquipments">Functionality of equipments</string>
+    <string name="roomThermometer">Room Thermometer</string>
+    <string name="clinicalThermometer">Clinical Thermometer</string>
+    <string name="weighingScale">Weiging scale</string>
+    <string name="ac">AC</string>
+    <string name="heater">Heater</string>
+    <string name="averageStay">Average stay</string>
+    <string name="upto8Hours">Upto 8 hours</string>
+    <string name="statusInfantDischarge">Status of babies at discharge</string>
+    <string name="statusMotherDischarge">Status of mother at discharge</string>
+    <string name="totalLiveBirthFacility">Total live births in facility</string>
+    <string name="birth">Birth</string>
+    <string name="admissionToKmcLounge">Admission to the KMC lounge</string>
+    <string name="dischargeFromKmcLaunge">Discharge from KMC lounge</string>
+    <string name="lama">LAMA</string>
+    <string name="dopr">DOPR</string>
+    <string name="absconded">Absconded</string>
+    <string name="doctorsDiscreation">Doctor\'s discreation</string>
+    <string name="died">Died</string>
+    <string name="excellent">Excellent</string>
+    <string name="average">Average</string>
+    <string name="bad">Bad</string>
+
+    <string name="equipmentNot">Equipment is not available.</string>
+    <string name="dontKnowMeasurement">Don\'t know how to take the measurement.</string>
+    <string name="motherNotAllowed">Mother did not allow to take the measurement.</string>
+    <string name="invalidPassword">Invalid Password</string>
+    <string name="presentYes">Present</string>
+    <string name="presentNo">Absent</string>
+    <string name="where_your_schedule_time_is">Where as your scheduled time is</string>
+    <string name="you">you</string>
+    <string name="in">in</string>
+    <string name="checked_in">Checked-in</string>
+    <string name="click_her_photo">Click her photo</string>
+    <string name="click_mother_photo">Click mother\'s Photo<font color='red'>*</font></string>
+    <string name="muscletone">Muscle Tone</string>
+    <string name="errorcheckList">Kindly select all the checklist points before submitting</string>
+    <string name="motherGuardianName">Mother Name/ Guardian Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noanother">No</string>
+    <string name="weightHint">No</string>
+
+    <string name="youAreConfirmingBack">Are you sure that you want to go back? </string>
+
+    <string name="urineValidation">Frequency of passing urine cannot be greater than 15 times </string>
+    <string name="stoolValidation">Frequency of passing stool cannot be greater than 15 times</string>
+    <string name="errorPulseMother">Pulse rate cannot be less than 50 bpm and greater than 150 bpm </string>
+
+    <string name="errorBabyLength">Baby length cannot be less than 30 cm and greater than 70 cm</string>
+    <string name="errorHeadMeasure">Head circumference cannnot be less than 25 cm and greater than 45 cm</string>
+    <string name="errorSystolicValue">Systolic count cannot be less than 90 mm Hg and greater than 200 mm Hg</string>
+    <string name="errorDistolicValue">Diastolic count cannot be less than 50 mm Hg and greater than 150 mm Hg</string>
+    <string name="errorQuantity">Quantity of feed cannot be less than 0 ml and greater than 150 ml</string>
+    <string name="errorLmpDate">Delivery week cannot be less than 24 weeks and greater than 44 weeks</string>
+    <string name="errorUniqueHospitalNo">Please Enter Unique Hospital Registration Number</string>
+    <string name="motherName">Mother\'s name</string>
+    <string name="otherSpecifyMand">Other (please specify)<font color='red'>*</font></string>
+
+
+
+</resources>

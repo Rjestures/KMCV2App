@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+
+    <LinearLayout
+        android:id="@+id/llScoreBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/ranking"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:weightSum="3">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStateRanking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/statee"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:src="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="Out of xx KMC lounge in state"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/division"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:src="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="Out of xx KMC lounge in Division"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/district"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:src="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="Out of xx KMC lounge in District"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_margin="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llOverAllRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/overallRating"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:rating="3"
+                        android:stepSize="1"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:weightSum="3">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlUpkeepRating"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="@string/upkeepOfMaintenanceKmcLounge"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_8sdp" />
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:rating="3" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlPerformanceRating"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="@string/kmcPerformance"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_8sdp" />
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:rating="3" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlUserExpRating"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="@string/userExperience"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_8sdp" />
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:rating="3" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

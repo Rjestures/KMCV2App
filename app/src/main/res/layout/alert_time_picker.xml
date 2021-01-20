@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:minHeight="@dimen/_30sdp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <NumberPicker
+                android:id="@+id/npHour"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:theme="@style/AppTheme.Picker"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_toLeftOf="@+id/view4"/>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"/>
+
+            <NumberPicker
+                android:id="@+id/npMin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:theme="@style/AppTheme.Picker"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_toRightOf="@+id/view4"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/tvOk"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rectangle_teal_round"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@drawable/rectangle_white_round"
+        android:clipToPadding="false"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llIdentify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIdentify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/pleaseIdentifyYourself"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvNoDataFound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/allNurseCheckedIn"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:visibility="gone"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/blackNew"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNext"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@mipmap/circle_shadow"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:elevation="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlCircle"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/circle_teal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ivLogin"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:srcCompat="@drawable/ic_next"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

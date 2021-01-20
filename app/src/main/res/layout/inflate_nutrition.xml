@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:weightSum="5">
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+
+        <TextView
+            android:id="@+id/tvMethod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+
+        <TextView
+            android:id="@+id/tvFluid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/lightgreyback"/>
+
+</LinearLayout>

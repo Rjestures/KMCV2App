@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@drawable/rectangle_white_round"
+        android:clipToPadding="false"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llIdentify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNurseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/r_color"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tvSingIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/pleaseClickSelfie"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rlSelfie"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_30sdp"
+                android:background="@drawable/rectangle_grey"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivCam"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:tint="@color/grey"
+                    app:srcCompat="@drawable/ic_camera" />
+
+                <ImageView
+                    android:id="@+id/ivSelfie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rlNext"-->
+<!--        android:layout_width="@dimen/_50sdp"-->
+<!--        android:layout_height="@dimen/_50sdp"-->
+<!--        android:background="@mipmap/circle_shadow"-->
+<!--        android:layout_marginBottom="@dimen/_15sdp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:elevation="@dimen/_20sdp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rlCircle"-->
+<!--            android:layout_width="@dimen/_32sdp"-->
+<!--            android:layout_height="@dimen/_32sdp"-->
+<!--            android:background="@drawable/circle_teal"-->
+<!--            android:layout_centerInParent="true">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivTick"-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="12dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:tint="@color/white"-->
+<!--                app:srcCompat="@drawable/ic_next" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/rlNext"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@mipmap/circle_shadow"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:elevation="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:id="@+id/rlCircle"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@drawable/circle_teal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ivTick"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:srcCompat="@drawable/ic_next"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

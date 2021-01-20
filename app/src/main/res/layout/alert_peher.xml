@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_grey_round_new"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/selectTimeOfTheDay"
+            android:textColor="@color/oo_color"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlMorning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/morning"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/ivSubah"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 am to 12 pm"
+                    android:textSize="@dimen/_8sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/blackNew"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@+id/ivSubah"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <ImageView
+                    android:id="@+id/ivSubah"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@mipmap/morning"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAfternoon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/afternoon"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/ivAfternoon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 pm to 4 pm"
+                    android:textSize="@dimen/_8sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/blackNew"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@+id/ivAfternoon"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <ImageView
+                    android:id="@+id/ivAfternoon"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@mipmap/afternoon"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlEvening"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/evening"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/ivEvening"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 pm to 8 pm"
+                    android:textSize="@dimen/_8sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/blackNew"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@+id/ivEvening"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <ImageView
+                    android:id="@+id/ivEvening"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@mipmap/evening"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlNight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/night"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/ivNight"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 pm to 12 am"
+                    android:textSize="@dimen/_8sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/blackNew"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@+id/ivNight"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <ImageView
+                    android:id="@+id/ivNight"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@mipmap/night"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

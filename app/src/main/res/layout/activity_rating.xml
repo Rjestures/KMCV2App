@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="code.newDashboard.RatingActivity"
+    tools:ignore="SpUsage">
+
+    <include layout="@layout/inflate_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRatingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/overallRating"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/rectangle_grey_round_new"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/searchLounge"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:tint="@color/grey"
+                    app:srcCompat="@drawable/ic_search" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="5 Star"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:rating="5" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/excellent"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_6sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/rectangular_border_green"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/green"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="6. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="8. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="4 Star"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:rating="4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/good"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_6sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/rectangular_border_light_green"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/g_color"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="6. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="8. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="3 Star"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:rating="3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/average"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_6sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/rectangular_border_yellow"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/n_color"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="6. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="8. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="2 Star"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:rating="2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/bad"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_6sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/rectangular_border_orange"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/a_color"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="6. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="8. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 Star"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:rating="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/bad"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_6sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/rectangular_border_red"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="6. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="7. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="8. Lounge Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

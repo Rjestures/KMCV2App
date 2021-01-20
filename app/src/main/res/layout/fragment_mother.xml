@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_35sdp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTotalMothers"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:text="@string/totalMother"
+        android:textColor="@color/blackNew"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:background="@color/lightgreyback"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"/>
+
+
+</LinearLayout>

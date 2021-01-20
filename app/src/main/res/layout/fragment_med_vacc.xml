@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvMed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:text="@string/medicines"
+        android:textColor="@color/oo_color"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/llMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/rectangle_lightgrey_outline"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_below="@+id/tvMed"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/date"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/time"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/quantity"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/unit"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_below="@+id/llMedicine"/>
+
+    <TextView
+        android:id="@+id/tvVaccMed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:text="@string/vaccines"
+        android:textColor="@color/oo_color"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_below="@+id/rvMedicines"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/llVaccination"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/rectangle_lightgrey_outline"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_below="@+id/tvVaccMed"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/date"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgreyback"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVaccines"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_below="@+id/llVaccination"/>
+
+    <RelativeLayout
+        android:id="@+id/rlMenu"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular_teal"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rlExpandMenu"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llAddMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true">
+
+                    <LinearLayout
+                        android:id="@+id/llMedicineAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            app:srcCompat="@drawable/ic_medication"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:tint="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/medicine"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_6sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/lightgreyback"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVaccinationAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            app:srcCompat="@drawable/ic_vaccine"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:tint="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/vaccine"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_6sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/lightgreyback"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCircle"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/circle_teal"
+                android:layout_gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivPlus"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    app:srcCompat="@drawable/ic_plus"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

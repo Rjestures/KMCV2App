@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgPrevious"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/back_image_arrrow"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="@dimen/_400sdp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgForword"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:srcCompat="@drawable/forword_arrow_image"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:srcCompat="@drawable/ic_cross"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:tabIndicatorColor="#fff"
+                android:visibility="gone"
+                app:tabMode="scrollable"
+                app:tabGravity="center"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabIndicatorHeight="0dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

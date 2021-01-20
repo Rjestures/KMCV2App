@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E02D80</color>
+    <color name="colorPrimaryDark">#E02D80</color>
+    <color name="colorAccent">#E02D80</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackNew">#202020</color>
+    <color name="grey">#999999</color>
+
+    <color name="lightgreynew">#c2c2c2</color>
+    <color name="lightgrey">#cccccc</color>
+    <color name="lightgreyback">#EBEBEB</color>
+    <color name="sidemenuback">#f7f7f7</color>
+    <color name="seablue">#7af7f5</color>
+    <color name="k_color">#f54029</color>
+    <color name="a_color">#f78533</color>
+    <color name="n_color">#fdc814</color>
+    <color name="g_color">#b2d32e</color>
+    <color name="aa_color">#0ac78e</color>
+    <color name="r_color">#0ac7c7</color>
+    <color name="o_color">#f390be</color>
+    <color name="oo_color">#f54494</color>
+    <color name="green">#08c108</color>
+    <color name="red">#f54029</color>
+    <color name="lightTeal">#0CDEDE</color>
+    <color name="lightRed">#92cb1747</color>
+    <color name="transparent">#8e030303</color>
+    <color name="transparenst">#f2067302</color>
+    <color name="light_blue">#d5f6fa</color>
+    <color name="transparentBackground">#380e0e0e</color>
+    <color name="transparentWhite">#ebffffff</color>
+    <color name="transparent_new">#00FFFFFF</color>
+    <color name="colorPrimary_transparent">#333F51B5</color>
+</resources>

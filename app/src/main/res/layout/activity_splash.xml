@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:src="@mipmap/up"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivUp"
+        android:layout_above="@+id/ivBottom"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splashLine1English"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="@dimen/_minus2sdp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/tvHindi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splashLine1Hindi"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@+id/tvEnglish"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@mipmap/bottom"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

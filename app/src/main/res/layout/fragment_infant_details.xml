@@ -1,0 +1,2568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/llToday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/today"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:id="@+id/viewToday"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/oo_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCaseSheet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCaseSheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/caseSheet"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:id="@+id/viewCaseSheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/oo_color"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGraphs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGraphs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/graphs"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <View
+                    android:id="@+id/viewGraphs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/oo_color"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTodayMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llTabs"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlKmc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_kmc_position" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="@string/kmcPositionDuration"
+                            android:textColor="@color/blackNew"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/ll1">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="bottom"
+                            app:srcCompat="@drawable/ic_clock"
+                            android:tint="@color/r_color"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/prescribed"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_8sdp" />
+
+                            <TextView
+                                android:text="@string/received"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvPrescribedTime"
+                                android:text="24 hours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_8sdp" />
+
+                            <TextView
+                                android:id="@+id/tvReceivedTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text=""
+                                android:textColor="@color/oo_color"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivKmcEmoji"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_neutral_status" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlNutrition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_breastfeeding" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/nutrition"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ll2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/prescribed"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <TextView
+                            android:id="@+id/tvPrescribedNutrition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/tv1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivNutrition"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            app:srcCompat="@drawable/ic_neutral_status" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl1"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toRightOf="@+id/ll2"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/fluids"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                android:id="@+id/tvFluids"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/notApplicableShortValue"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/modeOfFeeding"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                android:id="@+id/tvModeFeeding"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/notApplicableShortValue"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/totalQuantity"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                android:id="@+id/tvTotalQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/notApplicableShortValue"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/frequency"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                android:id="@+id/tvFrequency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/notApplicableShortValue"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_medication" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/medication"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/ivMedicationEmoji"
+                        android:layout_toRightOf="@+id/ll3"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:id="@+id/tvMedication"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text=""
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_weight="6"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_drop_color" />
+
+                                <TextView
+                                    android:id="@+id/tvVitamidDmL1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="21 hours"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    app:srcCompat="@drawable/ic_drop_grey" />
+
+                                <TextView
+                                    android:id="@+id/tvVitamidDmL2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="21 hours"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/vaccinationStatus"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_weight="6"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivVaccination"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/complete"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivMedicationEmoji"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_sad_smily" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_monitoring" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/monitoring"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@+id/ll4"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_infants_weighed" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:text="@string/dailyWeighing"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <ImageView
+                                    android:id="@+id/ivDailyWeighing"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_sad" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/ivRoutineAssessment1"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_infant_assessment" />
+
+                                <TextView
+                                    android:id="@+id/tvRoutineAssessment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:text="@string/routineAssessment"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/significantFindings"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF1"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF3"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp"
+                                android:tint="@color/r_color" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/tests"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/ordered"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <EditText
+                                    android:id="@+id/etOrdered"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:background="@drawable/rectangle_grey_round_new"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:hint="0"
+                                    android:clickable="false"
+                                    android:enabled="false"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/sampleCollected"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <EditText
+                                    android:id="@+id/etSampleCollected"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:background="@drawable/rectangle_grey_round_new"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:hint="0"
+                                    android:clickable="false"
+                                    android:enabled="false"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="@dimen/_5sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/reportAvail"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <EditText
+                                    android:id="@+id/etReportAvail"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:background="@drawable/rectangle_grey_round_new"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:hint="0"
+                                    android:clickable="false"
+                                    android:enabled="false"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivRoutineAssessment"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="@dimen/_15sdp"
+                        app:srcCompat="@drawable/ic_sad_smily" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll5"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_counselling" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/counselling"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/ivCounselling"
+                        android:layout_toRightOf="@+id/ll5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:id="@+id/llKMCWhatis"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivKmcWhatis"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/kmcWhatis"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llKMCPosition"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivKmcPosition"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/kmcPosition"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:id="@+id/llKMCNutrition"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivKmcNutrition"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/kmcNutrition"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llKMCHydiene"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivKmcHygiene"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/kmcHygiene"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:id="@+id/llKMCMonitoring"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivKmcMonitoring"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/kmcMonitoring"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llKMCRespect"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivKmcRespect"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/kmcRespect"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivCounselling"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        app:srcCompat="@drawable/ic_happy_status" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll6"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_doctor_notes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/docotorNotes"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDoctorNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/ll6"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/blackNew"
+                        android:hint="@string/notApplicableShortValue"
+                        android:textSize="@dimen/_8sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:minHeight="@dimen/_40sdp"
+                        android:background="@drawable/rectangle_grey_round_new" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCaseSheetMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llTabs"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_25sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:src="@color/oo_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/theBabyHasNotWeighed"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/pleaseWeighTheBaby"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:elevation="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp">
+
+                            <TextView
+                                android:id="@+id/tvWeightChangeBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/weightChangeFromBirth"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_8sdp" />
+
+                            <TextView
+                                android:id="@+id/tvInfantWeightBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp">
+
+                            <TextView
+                                android:id="@+id/tvWeightChangePrevious"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/weightChangeFromPrevious"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_8sdp" />
+
+                            <TextView
+                                android:id="@+id/tvInfantWeightPrevious"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/infantsCurrentGrowthStatus"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivInfantGrowthStatus"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        app:srcCompat="@drawable/ic_sad_status" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/sheHeIsNotGrowingOptimally"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_6sdp" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/significantFindings"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF1CS"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF2CS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF3CS"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:src="@drawable/circle_teal"
+                                android:tint="@color/r_color" />
+
+                            <TextView
+                                android:id="@+id/tvSF4CS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/analysis"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ll1"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            tools:ignore="DuplicateIds">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_kmc_position" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/kmcPositionDuration"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/ll1">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="bottom"
+                                app:srcCompat="@drawable/ic_clock" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_weight="5"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="@dimen/_8sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/prescribed"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_7sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tvPrescribedTimeCS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/_21Hours"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/_8sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/received"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_7sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tvReceivedTimeCS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text=""
+                                        android:textColor="@color/oo_color"
+                                        android:textSize="@dimen/_6sdp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivKmcEmojiCS"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            app:srcCompat="@drawable/ic_neutral_status"
+                            tools:ignore="DuplicateIds" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ll1"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            tools:ignore="DuplicateIds">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_breastfeeding" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/nutrition"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_toLeftOf="@+id/ivNutritionCS"
+                            android:layout_toRightOf="@+id/ll1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvPrescribedNutritionCS"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/prescribed"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvReceivedNutritionCS"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:text="@string/received"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_7sdp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/exclusiveBreastfeeding"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_6sdp" />
+
+                                <ImageView
+                                    android:id="@+id/ivExcBreastFeed"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    app:srcCompat="@drawable/ic_check_box" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        app:srcCompat="@drawable/ic_quantity" />
+
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_weight="5"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/twoHundredMl"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvNutritionQuantity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:textColor="@color/oo_color"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        app:srcCompat="@drawable/ic_clock" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_weight="5"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/tweleveTimes"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tvNutritionTime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="5"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:textColor="@color/oo_color"
+                                    android:textSize="@dimen/_6sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivNutritionCS"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            app:srcCompat="@drawable/ic_sad_status"
+                            tools:ignore="DuplicateIds" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ll3"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            tools:ignore="DuplicateIds">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_medication" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/medication"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toLeftOf="@+id/ivMedicationEmoji"
+                            android:layout_toRightOf="@+id/ll3"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_7sdp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_weight="6"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_drop_color" />
+
+                                    <TextView
+                                        android:id="@+id/tvVitamidDmL1CS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="21 hours"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        app:srcCompat="@drawable/ic_drop_grey" />
+
+                                    <TextView
+                                        android:id="@+id/tvVitamidDmL2CS"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="21 hours"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/vaccinationStatus"
+                                    android:textColor="@color/blackNew"
+                                    android:textSize="@dimen/_7sdp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_weight="6"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/ivVaccinationCS"
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_check_box" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/complete"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ivMedicationEmoji"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            app:srcCompat="@drawable/ic_happy_status"
+                            tools:ignore="DuplicateIds" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ll4"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            tools:ignore="DuplicateIds">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_monitoring" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/monitoring"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/ll4"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_weight_gain" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:text="@string/dailyWeighing"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                    <ImageView
+                                        android:id="@+id/ivDailyWeighingCS"
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_centerVertical="true"
+                                        app:srcCompat="@drawable/ic_infant_assessment" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:text="@string/routineAssessment"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                    <ImageView
+                                        android:id="@+id/ivRoutineAssessmentCS"
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/tests"
+                                android:textColor="@color/blackNew"
+                                android:textSize="@dimen/_7sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/ordered"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                    <EditText
+                                        android:id="@+id/etOrderedCS"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:background="@drawable/rectangle_grey_round_new"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:hint="0"
+                                        android:enabled="false"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/sampleCollected"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                    <EditText
+                                        android:id="@+id/etSampleCollectedCS"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:background="@drawable/rectangle_grey_round_new"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:hint="0"
+                                        android:enabled="false"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="@string/reportAvail"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                    <EditText
+                                        android:id="@+id/etReportAvailCS"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:background="@drawable/rectangle_grey_round_new"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:hint="0"
+                                        android:enabled="false"
+                                        android:textColor="@color/blackNew"
+                                        android:textSize="@dimen/_6sdp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGraphsMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llTabs"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/llGraphsTab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@color/white"
+                android:elevation="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvGrowthMonitoring"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/growthMonitoring"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_6sdp" />
+
+                <TextView
+                    android:id="@+id/tvRespiratoryRate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/respiratoryRateTemperature"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_6sdp" />
+
+                <TextView
+                    android:id="@+id/tvPulseOxidation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/pulseOxidation"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_6sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGrowthMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/weight"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/weightChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/kmcPosition"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/kmcChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/feeding"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/feedingChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRespiratoryRateMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/respiratoryRate"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/respiratoryGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/temperature"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/tempGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPulseOxidationMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/pulseRate"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/pulseGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/spo2"
+                    android:textColor="@color/oo_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/spo2Graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

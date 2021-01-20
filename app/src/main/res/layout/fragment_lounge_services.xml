@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_80sdp">
+        <TextView
+            android:id="@+id/tvShiftTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text=""
+            android:textColor="@color/oo_color"
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlBedSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_bed_sheet" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/ivBedSheetResult"
+                    android:layout_toEndOf="@+id/rl1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/dailyChangingBedSheet"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:id="@+id/tvBedSheetResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/ivBedSheetResult"
+                    android:layout_toEndOf="@+id/rl1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:textColor="@color/blackNew"
+                    android:textSize="@dimen/_6sdp" />
+
+                <ImageView
+                    android:id="@+id/ivBedSheetResult"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/ic_check_box"
+                    android:layout_margin="@dimen/_2sdp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/sanitationInfectionControl"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivSanitationResult"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/_2sdp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_120sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_weight="1"
+                        android:text="@string/eightAmToTwoPm"
+                        android:textColor="@color/blackNew"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/twoPmToEightPm"
+                        android:textColor="@color/blackNew"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_weight="1"
+                        android:text="@string/eightPmToTwoAm"
+                        android:textColor="@color/blackNew"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textSize="@dimen/_6sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_lounge" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lounge"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/ivLoungeSlot1"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                        <ImageView
+                            android:id="@+id/ivLoungeSlot2"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                        <ImageView
+                            android:id="@+id/ivLoungeSlot3"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_toilet" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/toiletWashroom"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/ivToiletSlot1"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                        <ImageView
+                            android:id="@+id/ivToiletSlot2"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                        <ImageView
+                            android:id="@+id/ivToiletSlot3"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_dining_area" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/diningCommonArea"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/ivDiningSlot1"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                        <ImageView
+                            android:id="@+id/ivDiningSlot2"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                        <ImageView
+                            android:id="@+id/ivDiningSlot3"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_meals" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toStartOf="@+id/ivMealResult"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toEndOf="@+id/iv3"
+                        android:text="@string/provisionOfMeals"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivMealResult"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/_2sdp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_minus3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/breakFast"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivBreakFast"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/lunch"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivLunch"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/dinner"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_7sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivDinner"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/iv5"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/ic_water" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toStartOf="@+id/ivDrinkingResult"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toEndOf="@+id/iv5"
+                        android:text="@string/availabilityOfCleanWater"
+                        android:textColor="@color/blackNew"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivDrinkingResult"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/_2sdp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_minus3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/eightAmToTwoPm"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivWaterSlot1"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/twoPmToEightPm"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivWaterSlot2"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/eightPmToTwoAm"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/blackNew"
+                            android:textSize="@dimen/_6sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivWaterSlot3"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            app:srcCompat="@drawable/ic_check_box" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/rlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rlNext"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@mipmap/circle_shadow"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:clipToPadding="false"
+                android:elevation="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/circle_teal"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/ivNext"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        app:srcCompat="@drawable/ic_next"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/white"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rectangle_grey_round_new"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:visibility="visible"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/rlOk"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/rectangle_teal_round"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tvOk"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvOk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/_3sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

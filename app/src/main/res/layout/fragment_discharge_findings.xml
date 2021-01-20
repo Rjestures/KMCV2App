@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvDischargeType"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/exceptionalDischarge"
+        android:paddingTop="@dimen/_2sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rectangle_teal_round"/>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/tvDischargeType">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:tint="@color/r_color"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/circle_red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/dischargeCriteria1"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_9sdp"
+                android:layout_toLeftOf="@+id/ivDischarge1"/>
+
+            <ImageView
+                android:id="@+id/ivDischarge1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:background="@drawable/circle_teal"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:tint="@color/r_color"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/circle_red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/dischargeCriteria2"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_9sdp"
+                android:layout_toLeftOf="@+id/ivDischarge2"/>
+
+            <ImageView
+                android:id="@+id/ivDischarge2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:background="@drawable/circle_teal"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:tint="@color/r_color"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/circle_red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/dischargeCriteria3"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_9sdp"
+                android:layout_toLeftOf="@+id/ivDischarge3"/>
+
+            <ImageView
+                android:id="@+id/ivDischarge3"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:background="@drawable/circle_teal"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:tint="@color/r_color"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/circle_red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/dischargeCriteria4"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_9sdp"
+                android:layout_toLeftOf="@+id/ivDischarge4"/>
+
+            <ImageView
+                android:id="@+id/ivDischarge4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:background="@drawable/circle_teal"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:tint="@color/r_color"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/circle_red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/dischargeCriteria5"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/blackNew"
+                android:textSize="@dimen/_9sdp"
+                android:layout_toLeftOf="@+id/ivDischarge5"/>
+
+            <ImageView
+                android:id="@+id/ivDischarge5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_tick"
+                android:background="@drawable/circle_teal"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/llMain"
+        android:textSize="@dimen/_9sdp"/>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rlPrevious"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@mipmap/circle_shadow"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:clipToPadding="false"
+            android:elevation="@dimen/_10sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/circle_teal"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    app:srcCompat="@drawable/ic_next"
+                    android:rotation="180"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlNext"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@mipmap/circle_shadow"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:clipToPadding="false"
+            android:elevation="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/circle_teal"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/ivNext"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    app:srcCompat="@drawable/ic_next"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/white"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

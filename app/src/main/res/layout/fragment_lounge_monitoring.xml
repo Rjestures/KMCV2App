@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4"
+        android:elevation="@dimen/_5sdp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/rectangle_teal_round_new"
+            android:textSize="@dimen/_8sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_weight="1"
+            android:text="@string/status"
+            android:elevation="@dimen/_5sdp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvLoungeService"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:text="@string/loungeServices"
+            android:textSize="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            android:textColor="@color/blackNew"/>
+
+        <TextView
+            android:id="@+id/tvTodaysDashboard"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:textSize="@dimen/_8sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            android:textColor="@color/blackNew"
+            android:text="@string/todaysDashboard"/>
+
+        <TextView
+            android:id="@+id/tvMonthlyDashboard"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:textSize="@dimen/_8sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5sdp"
+            android:textColor="@color/blackNew"
+            android:text="@string/monthlyDashboard"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flLounge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

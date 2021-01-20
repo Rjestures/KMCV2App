@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage"
+    tools:context="code.newDashboard.StateRankingActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/inflate_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/stateRanking"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_8sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/rectangle_grey_round_new"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/searchLounge"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:inputType="textCapSentences"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:srcCompat="@drawable/ic_search"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/grey"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llMain"
+            android:background="@drawable/rectangle_grey"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/loungeName"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/blackNew"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llMain"
+            android:background="@drawable/rectangle_grey"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/loungeName"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/blackNew"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llMain"
+            android:background="@drawable/rectangle_grey"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/loungeName"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/blackNew"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llMain"
+            android:background="@drawable/rectangle_grey"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/loungeName"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/blackNew"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llMain"
+            android:background="@drawable/rectangle_grey"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/loungeName"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="@color/blackNew"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

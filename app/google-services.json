@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "887391050539",
+    "project_id": "kmc-app-122d2",
+    "storage_bucket": "kmc-app-122d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887391050539:android:b2767b042774aa7e87836e",
+        "android_client_info": {
+          "package_name": "com.kmcapp.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887391050539-593aj4uqe0n2120bveg47gkf4lurmn6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kmcapp.android",
+            "certificate_hash": "df65678cacfee9ad4f1efb1edf35f7990adae585"
+          }
+        },
+        {
+          "client_id": "887391050539-k7rkc7kuedo6c06opt0c8i5a578qaa8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdCL5xmm-53-KNn6zOl_X7WBIGk1miuP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887391050539-k7rkc7kuedo6c06opt0c8i5a578qaa8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
